@@ -1,6 +1,6 @@
 import React from "react";
 
-function index(){
+function landing(){
     return(
         <div>
             <h1>This is will be our landing page</h1>
@@ -8,4 +8,4 @@ function index(){
     )
 }
 
-export default index
+export default landing;
