@@ -25,7 +25,7 @@ function House() {
             slidesToSlide: 1 
         }
     }
-    
+
     useEffect(() => {
         fetch("http://localhost:3000/houses")
         .then((res) => res.json())
@@ -38,7 +38,7 @@ function House() {
     return (
         <div className='house'>
             <h3><strong>Houses Listings</strong></h3>
-            <Carousel responsive={responsive} >
+            <Carousel responsive={responsive} autoPlay>
                 {houses.filter((card,ind) => ind < 6).map(card => <Card card={card}/>)}
             </Carousel>        
         </div>
