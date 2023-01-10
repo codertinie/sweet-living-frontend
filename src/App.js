@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/home";
+import Home from "./components/home/Home";
 import Landing from "./components/landing";
 import Footer from "./components/footer";
 import Login from "./components/login";
@@ -24,7 +24,7 @@ function App() {
           <Route path="singleproperty" element={<Singleproperty />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
-
+        <Home />
       </>
    
   );
