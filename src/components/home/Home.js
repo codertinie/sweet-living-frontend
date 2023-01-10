@@ -1,8 +1,11 @@
 import React from 'react'
+import './home.css'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='view-page'>
+      <h2>Featured Listings</h2>
+    </div>
   )
 }
 
