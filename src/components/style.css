@@ -6,7 +6,8 @@ body{
 #header{
    position: relative;
    left: 2rem;
-   font-family: 'Poppins', sans-serif;
+   font-family: 'Tangerine', cursive;
+   font-size: 3rem;
    
 }
 nav{
