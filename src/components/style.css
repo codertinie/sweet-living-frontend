@@ -6,7 +6,8 @@ body{
 #header{
    position: relative;
    left: 2rem;
-   font-family: 'Poppins', sans-serif;
+   font-family: 'Tangerine', cursive;
+   font-size: 3rem;
    
 }
 nav{
@@ -25,7 +26,7 @@ nav{
     color: #6F73D2;
     font-family: 'Poppins', sans-serif;
     font-size:20px;
-
+    font-weight: 600;
 }
 .navlink:hover{
     color: #9597e8;
@@ -70,3 +71,6 @@ nav{
     font-weight: 900;
 }
 
+#nopage{
+   text-align: center;
+}

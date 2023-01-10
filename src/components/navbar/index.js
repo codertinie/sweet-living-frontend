@@ -10,7 +10,7 @@ function Navbar(){
         <nav>
              <div>
                 <NavLink   to="/"  className="navlink" id='header'>
-                SWEET-LIVING 
+                SWEET - LIVING 
                 </NavLink>
              </div>
         
