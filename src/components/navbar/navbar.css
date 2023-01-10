@@ -5,10 +5,10 @@ body{
 
 #header{
    position: relative;
-   left: 2rem;
+   right: 17rem;
    font-family: 'Tangerine', cursive;
    font-size: 3rem;
-    font-weight: 700;
+   font-weight: 700;
    
 }
 nav{
@@ -23,6 +23,8 @@ nav{
 
 
 .navlink{
+    position: relative;
+    right:rem;
     text-decoration:none;
     color: #6F73D2;
     font-family: 'Poppins', sans-serif;
@@ -41,10 +43,11 @@ nav{
 }
 
 .container1-nav{
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content:space-between;
-
+    position: relative;
+    right: 13rem;
 }
 
 #navButton{
@@ -74,4 +77,8 @@ nav{
 
 #nopage{
    text-align: center;
+}
+[alt=house]{
+    height:4rem;
+    width:5rem;
 }
