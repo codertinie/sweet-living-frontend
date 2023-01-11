@@ -16,6 +16,9 @@
     bottom: 0;
 }
 
+p:hover{
+    background-color: cornflowerblue;
+}
 .section1 {
     position: relative;
     align-items: center;
