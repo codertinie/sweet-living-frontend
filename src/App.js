@@ -9,6 +9,8 @@ import Navbar from "./components/navbar";
 import Contact from "./components/contact";
 import About from "./components/about";
 import Nopage from "./components/nopage";
+import All_Apartments from "./components/home/All_Apartments"
+import All_Houses from "./components/home/All_Houses"
 
 function App() {
   return (
@@ -16,17 +18,17 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="home" element={<><Home /> <Footer/></>} />
+          <Route path="/home" element={<><Home /> <Footer/></>} />
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="/apartments" element={<All_Apartments />} />
+          <Route path="/houses" element={<All_Houses />} />
           <Route path="singleproperty" element={<Singleproperty />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
-        <Home />
       </>
-   
   );
 }
 
