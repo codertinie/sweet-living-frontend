@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import Landing from "./components/landing";
-import Footer from "./components/footer";
+import Footer from "./components/footer/Footer.js";
 import Login from "./components/login";
 import Signup from "./components/signup";
 import Singleproperty from "./components/singleproperty";
 import Navbar from "./components/navbar";
-import Contact from "./components/contact";
-import About from "./components/about";
+import Contact from "./components/contact/Form";
+import About from "./components/about/About.js";
 import Nopage from "./components/nopage";
 
 function App() {
