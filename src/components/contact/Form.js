@@ -21,7 +21,7 @@ function Form() {
 
     return (
         <div  className="container">
-            <h2>Contact us</h2>
+            <h3>Contact us</h3>
             <form onSubmit={handleSubmit} className="form">
                 <div className="name">
                     <label for="firstName" id="nameLabel">First Name</label>

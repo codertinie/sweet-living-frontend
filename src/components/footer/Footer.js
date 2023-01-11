@@ -7,7 +7,7 @@ function Footer() {
   return(
     <div className='footer'>
       <div className='section1'>
-        <h1>SWEET-LIVING</h1>
+        <h2>SWEET-LIVING</h2>
         <p><FaPhoneSquareAlt/>
                 +254712222356</p>
                 <p><FaRegEnvelope/>

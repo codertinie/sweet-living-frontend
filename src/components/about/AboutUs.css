@@ -15,7 +15,11 @@ h1 {
     color: hsla(0, 0%, 0%, 0.08);
     animation: zoomout 10s ease 500ms forwards;
     font-size: 70px;
+
 }
+
+
+
 
 
 .content {
@@ -23,7 +27,12 @@ h1 {
     padding: 24px;
     text-align: center;
     width: 50%;
-    height: 60vh
+    height: 68vh
+}
+
+span {
+    color: crimson;
+    text-align: center;
 }
 
 .about-img {
