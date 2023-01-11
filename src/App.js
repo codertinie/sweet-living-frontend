@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import Landing from "./components/landing";
-import Footer from "./components/footer";
+import Footer from "./components/footer/Footer.js";
 import Login from "./components/login";
 import Signup from "./components/signup";
 import Singleproperty from "./components/singleproperty";
