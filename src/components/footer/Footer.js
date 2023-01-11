@@ -1,13 +1,13 @@
 import React from 'react';
 import './Footer.css'
-import { FaPhoneSquareAlt, FaRegEnvelope, FaWhatsapp, FaTwitter, FaGithubSquare, FaFacebook, FaWhatsappSquare, } from "react-icons/fa";
+import { FaPhoneSquareAlt, FaRegEnvelope, FaWhatsapp, FaTwitter, FaGithub, FaFacebook, FaWhatsappSquare, } from "react-icons/fa";
 
 
 function Footer() {
   return(
     <div className='footer'>
       <div className='section1'>
-        <h4>contact us</h4>
+        <h1>SWEET-LIVING</h1>
         <p><FaPhoneSquareAlt/>
                 +254712222356</p>
                 <p><FaRegEnvelope/>
@@ -15,13 +15,13 @@ function Footer() {
                 <p><FaWhatsapp/></p>
                 <p><FaFacebook/></p>
                 <p><FaTwitter/></p>
-                <p><FaGithubSquare/>All rights reserved &trade; inc</p>
-                </div>
+                <p><FaGithub/></p>
+      </div>
                 <div className='section2'>
-                <p>Copyright By SweetLiving Properties&Developers</p>
+                <p> &copy; {new Date().getFullYear()} Copyright:Sweet Living Kenya|All Rights Reserved </p>
                 </div>
-      
-    </div>
+    </div>  
+  
   )
     
   
