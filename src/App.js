@@ -6,8 +6,8 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 import Singleproperty from "./components/singleproperty";
 import Navbar from "./components/navbar";
-import Contact from "./components/contact";
-import About from "./components/about";
+import Contact from "./components/contact/Form";
+import About from "./components/about/About.js";
 import Nopage from "./components/nopage";
 
 function App() {
