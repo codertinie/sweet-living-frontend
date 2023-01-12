@@ -1,0 +1,78 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 5px;
+  flex-wrap: wrap;
+  font-family:'Poppins', sans-serif
+}
+
+.grid-item-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.grid-item > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.grid-item-6{
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.grid-item-6 > h3 {
+  color: #6F73D2;
+}
+
+.grid-item-7 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  /* background-color: darkgray; */
+  position: relative;
+  box-shadow: 1px 2px 5px;
+  border-radius: 10px;
+}
+
+.grid-item-7 > h3{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.grid-item-7 > button {
+  font-size: 20px;
+  position: absolute;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  left: 55%;
+  /* top: 70%; */
+  bottom: 5%;
+}
+
+.grid-item-7 > button:hover {
+  background-color: red;
+  color: aliceblue;
+}
+
+.grid-item-7 > h3{
+  color: #6F73D2;
+}
+
+.grid-item-7 > li {
+  
+  
+}
+
+.grid-item-8 {
+  grid-row-start: 4;
+  /* grid-row-end: 5; */
+}
+
+.grid-item-8 > h3{
+  color: #6F73D2;
+}
