@@ -16,7 +16,7 @@ function Form() {
             email: emailRef.current.value,
             message: messageRef.current.value
         }
-        alert("Great!: \n" + JSON.stringify(data))
+        alert("Messege sent!, Thankyou we value your Feedback")
     }
 
     return (
