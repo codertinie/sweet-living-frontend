@@ -37,7 +37,7 @@ function House() {
 
     return (
         <div className='house'>
-            <h3><strong>Houses Listings</strong></h3>
+            <h3 className='home-title'><strong>Houses Listings</strong></h3>
             <Carousel responsive={responsive} autoPlay>
                 {houses.filter((card,ind) => ind < 6).map(card => <Card card={card}/>)}
             </Carousel>        
