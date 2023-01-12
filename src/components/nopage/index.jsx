@@ -1,3 +1,4 @@
+import '../navbar/navbar.css';
 
 const NoPage = () => {
     return <h1 id="nopage">404 Page Not Found</h1>;
