@@ -14,7 +14,7 @@ function About() {
                      by posting the houses on our website.<br/>
                      We are renowned for our impresive house sales, and appartment renting in different counties where we have gained excellent reputation
                      because we deliver services that provide proffesionalism,integrity and safisfaction to our clients.</p>
-                     <p><span>Our Aim</span> <br/>is creating property ownership through selling and Renting commercial and private Properties</p>
+                     <p><span>Our Aim</span> <br/>Is creating property ownership through selling and Renting commercial and private Properties</p>
             </div>
         </div>
     );
