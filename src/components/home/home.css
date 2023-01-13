@@ -4,52 +4,89 @@
     --primary-color:#fafafa;
     --secondary-color:#6F73D2;
 }
+body{
+    background-color: #fafafa;
+}
 .view-page {
-    margin: 10px 80px;
+    margin: 10px 60px;
     width: 90%;
 }
 .container{
     display: flex;
 }
-h3{
+.home-title{
     margin-left: 20px;
     margin-top: 15px;
     color: var(--secondary-color);
     font-family: 'Poppins', sans-serif; 
-    /* font-family: 'Tangerine', cursive; */
     font-size: 20px;
 }
-h2{
+.view-title{
     color: var(--secondary-color);
-    /* font-family: 'Tangerine', cursive; */
     font-family: 'Poppins', sans-serif; 
     text-align: center;
     font-size: 30px;
     font-weight: 900;
-
 }
-h4{
-    font-size: 15px;
+.card-container{
+    justify-content: space-between;
+    margin-left: 10px;
 }
 .card{
-    border-radius: 50px 20px;
-    border: 0 0 20px 2px solid rgba(250, 250, 250, 250);
+    background-color: transparent;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 .card:hover{
     transform:scale(1.1);
     z-index:2;
+    transition: all 0.3s ease-in-out; 
 }
 
-.card-title{
-    display: flex;
-    justify-content: space-between;
+.card img{
+    overflow: content-box; 
+    object-fit: cover;  
+    width: 100%;
+    height: 18rem;
+    margin: auto;
+    background: transparent;
+
 }
-.view-btn{
+.card-price{
+    left: 0px;
+    width: 100%;
+    bottom: 30px;
+    position: relative;
+    color: #fafafa;
+    font-weight: 800;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
+}
+#view-btn {
     width: fit-content;
-}
-.view-btn:hover{
+    position: relative;
+    bottom: 60px;
+    left: 80px;
     background-color: #6F73D2;
     color: #fafafa;
+    font-weight: 800;
+    border-radius: 10px;
+}
+#view-btn:hover{
+    background-color: red;
+    color: #fafafa;
+    cursor: pointer;
+    font-weight: 800;
+}
+.location-description{
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+    font-size: 15px;
 }
 .rental-card{
     display:grid; 

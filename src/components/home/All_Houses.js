@@ -17,7 +17,7 @@ function All_Houses() {
     return (
         <div>
             <div className='rentals'>
-                <h2>House Listings</h2>
+                <h2 className='view-title'>House Listings</h2>
                 <div className='rental-card'>
                     {houses.map((card) => {
                         return(

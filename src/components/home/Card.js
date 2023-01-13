@@ -1,17 +1,17 @@
 import React from 'react';
-// import './home.css'
+import './home.css'
 
 function Card({card}) {
 
     return (
         <div className='card-container' >
-        <div className='card shadow bg-white rounded' style={{width: "15rem"} }>
-            <img src={card.image_url} alt=''/>
-        <div className='card-title'>
-            <h4>{card.price}</h4>
-            <button className='view-btn'>View</button>
-        </div>
-        </div>
+            <div className='card shadow s-white rounded' >
+                <img src={card.image_url} alt=''/>
+                <h4 className='card-price'>{card.price}</h4>
+                <button id='view-btn'>View</button>
+                <h4 className='location-description'>{card.location}</h4>
+                <h4 className='location-description'>{card.description}</h4>
+            </div>
         </div>
     )
 }
