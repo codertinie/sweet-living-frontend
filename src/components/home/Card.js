@@ -9,7 +9,7 @@ function Card({card}) {
                 <img className="card-img" src={card.image_url} alt="Card image"/>
                 <div class="card-img-overlay d-flex flex-column">
                     <div className="mt-auto">
-                        <p id='overlay-text'><em>{card.price}</em></p>
+                        <p id='overlay-text'><em>KSH. {card.price}/m</em></p>
                         <p id='overlay-text'><em>{card.description}</em></p>
                         <button id='view-btn'>View</button>
                         
