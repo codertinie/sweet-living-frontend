@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Landing from "./components/landing";
 import Footer from "./components/footer/Footer.js";
@@ -14,13 +14,13 @@ import All_Houses from "./components/home/All_Houses"
 
 function App() {
   return (
-      <>
-        <Navbar />
+  <>
+    <Router>
+      <Navbar />
+      <div>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="home" element={<Home /> } >
-            <Route index element={<Footer/>} />
-          </Route>
+          <Route path="home" element={<Home /> } />
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
@@ -29,7 +29,11 @@ function App() {
           <Route path="/houses" element={<All_Houses />} />
           <Route path="singleproperty" element={<Singleproperty />} />
           <Route path="*" element={<Nopage />} />
+            <Route index element={<Footer/>} />
         </Routes>
+        <Footer/>
+      </div>
+    </Router>   
       </>
   );
 }
