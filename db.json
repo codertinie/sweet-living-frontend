@@ -3,119 +3,152 @@
         {
             "id": 1,
             "image_url": "https://i.ibb.co/F3d07X1/image-2.jpg",
-            "price": "KSH. 10.4M"
+            "price": "KSH. 10.4M",
+            "location":"Syokimau",
+            "description":"2bd|1.75ba|1100sqft"
         },
         {
             "id": 2,
             "image_url": "https://i.ibb.co/82fGwpj/image-3.jpg",
-            "price": "KSH. 20.6M"
+            "price": "KSH. 20.6M",
+            "location":"Parklands Road,Westlands",
+            "description":"2bd|2ba|1300sqft"
         },
         {
             "id": 3,
             "image_url": "https://i.ibb.co/XtpZNSh/image-4.jpg",
-            "price": "KSH. 40M"
+            "price": "KSH. 40M",
+            "location":"Riverside Drive,Kilimani",
+            "description":"3bd|2.75ba|1500sqft"
         },
         {
             "id": 4,
             "image_url": "https://i.ibb.co/0qhty7k/image-50.jpg",
-            "price": "KSH. 38.5M"
+            "price": "KSH. 38.5M",
+            "location":"Oloitoktok Road, Kileleshwa",
+            "description":"3bd|2.75ba|1400sqft"        
         },
         {
             "id": 5,
             "image_url": "https://i.ibb.co/Yc1qKZK/image-51.jpg",
-            "price": "KSH. 36.5M"
-        },
+            "price": "KSH. 36.5M",
+            "location":"Kindaruma Road,Kilimani",
+            "description":"4bd|3.75ba|1700sqft"        },
         {
             "id": 6,
             "image_url": "https://i.ibb.co/Wgxtc7K/image-52.jpg",
-            "price": "KSH. 46.5M"
-        },
+            "price": "KSH. 37.5M",
+            "location":"Matasia, Ngong",
+            "description":"3bd|2.75ba|200sqft"        },
         {
             "id": 7,
             "image_url": "https://i.ibb.co/mSTPLR6/image-43.jpg",
-            "price": "KSH. 41.5M"
-        },
+            "price": "KSH. 45.5M",
+            "location":"Karen Road,Karen",
+            "description":"3bd|35ba|1800sqft"        },
         {
             "id": 8,
             "image_url": "https://i.ibb.co/ydZZxjK/image-45.jpg",
-            "price": "KSH. 41.5M"
-        },
+            "price": "KSH. 38.5M",
+            "location":"Isinya",
+            "description":"4bd|3.75ba|2000sqft"        },
         {
             "id": 9,
             "image_url": "https://i.ibb.co/q9xTD34/image-47.jpg",
-            "price": "KSH. 41.5M"
-        },
+            "price": "KSH. 70.5M",
+            "location":"Muthaiga",
+            "description":"4bd|4ba|200sqft"        },
         {
             "id": 10,
             "image_url": "https://i.ibb.co/HTtdbZ0/image-46.jpg",
-            "price": "KSH. 41.5M"
-        },
+            "price": "KSH. 35.5M",
+            "location":"Juja Road, Juja",
+            "description":"3bd|2.75ba|2000sqft"        },
         {
             "id": 11,
             "image_url": "https://i.ibb.co/jkM8DPw/image-54.jpg",
-            "price": "KSH. 41.5M"
+            "price": "KSH. 40.5M",
+            "location":"Langata Road, Karen",
+            "description":"3bd|2.75ba|1700sqft"        
         },
         {
             "id": 12,
             "image_url": "https://i.ibb.co/TvsyWCH/image-53.jpg",
-            "price": "KSH. 41.5M"
-        }
+            "price": "KSH. 52.5M",
+            "location":"Gigiri",
+            "description":"3bd|2.75ba|1800sqft"        }
     ],
     "apartments": [
         {
             "id": 13,
             "image_url": "https://i.ibb.co/Krn8cj9/image-49.jpg",
-            "price": "KSH. 65,000"
-        },
+            "price": "KSH. 65,000",
+            "location":"South C",
+            "description":"3bd|2.75ba"        },
         {
             "id": 14,
             "image_url": "https://i.ibb.co/YZffhhy/image-44.jpg",
-            "price": "KSH. 90,000"
-        },
+            "price": "KSH. 65,000",
+            "location":"South B",
+            "description":"3bd|2.75ba"        },
         {
             "id": 15,
             "image_url": "https://i.ibb.co/DL0YjMV/image-55.jpg",
-            "price": "KSH. 100,000"
-        },
+            "price": "KSH. 90,000",
+            "location":"Dennis Pritt Road, Kilimani",
+            "description":"3bd|2.75ba"        },
         {
             "id": 16,
             "image_url": "https://i.ibb.co/Nyqfr5H/image-56.jpg",
-            "price": "KSH. 105,000"
+            "price": "KSH. 85,000",
+            "location":"Waiyaki Way, Westlands",
+            "description":"2bd|1.75ba"        
         },
         {
             "id": 17,
             "image_url": "https://i.ibb.co/H4XhqTh/image-57.jpg",
-            "price": "KSH. 106,000"
+            "price": "KSH. 106,000",
+            "location":"Kirawa Road, Kitisuru",
+            "description":"3bd|2.75ba"        
         },
         {
             "id": 18,
             "image_url": "https://i.ibb.co/7NVYxJX/image-58.jpg",
-            "price": "KSH. 108,000"
-        },
+            "price": "KSH. 100,000",
+            "location":"Kingara Road, Lavington",
+            "description":"3bd|3.75ba"        },
         {
             "id": 19,
             "image_url": "https://i.ibb.co/pnQFf9K/image-9.jpg",
-            "price": "KSH. 111,000"
-        },
+            "price": "KSH. 60,000",
+            "location":"Thindigua",
+            "description":"4bd|3ba"        },
         {
             "id": 20,
             "image_url": "https://i.ibb.co/4R4mvPB/image-10.jpg",
-            "price": "KSH. 111,000"
+            "price": "KSH. 62,000",
+            "location":"Kiambu Road",
+            "description":"3bd|2ba"        
         },
         {
             "id": 21,
             "image_url": "https://i.ibb.co/GsY57G0/image-27.jpg",
-            "price": "KSH. 111,000"
+            "price": "KSH. 63,000",
+            "location":"Roasters,Thika Road",
+            "description":"3bd|2ba"        
         },
         {
             "id": 22,
             "image_url": "https://i.ibb.co/YfgNZtH/image-31.jpg",
-            "price": "KSH. 111,000"
+            "price": "KSH. 55,000",
+            "location":"Mombasa Road,Imara Daima",
+            "description":"3bd|2ba"       
         },
         {
             "id": 23,
             "image_url": "https://i.ibb.co/RzYJ4Jr/image-32.jpg",
-            "price": "KSH. 111,000"
-        }
+            "price": "KSH. 58,000",
+            "location":"Nyayo Estate, Mombasa Road",
+            "description":"3bd|2ba"        }
     ]
 }

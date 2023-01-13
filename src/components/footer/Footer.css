@@ -3,8 +3,8 @@
     font-family:'Tangerine' , cursive;
     color: #fff;
     display: flex;
-    background-color: #6F73D2;
-    height: 10vh;
+    background-color: #7e82e7;
+    height: 20vh;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -16,18 +16,18 @@
     bottom: 0;
     text-decoration: underline;
 }
-h1{
+h2{
     font-family: 'Tangerine', cursive;
     text-decoration: underline;
     
 }
 h1:hover{
-        background-color: lightskyblue;
+        background-color: rgb(52, 167, 193);
 }
 
 
 p:hover{
-    background-color: lightskyblue;
+    background-color: rgb(21, 105, 157);
 }
 .section1{
     font-family: sans-serif;

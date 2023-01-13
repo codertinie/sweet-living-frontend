@@ -16,12 +16,12 @@ function Form() {
             email: emailRef.current.value,
             message: messageRef.current.value
         }
-        alert("Great!: \n" + JSON.stringify(data))
+        alert("Messege sent!, Thankyou we value your Feedback")
     }
 
     return (
         <div  className="container">
-            <h2>Contact us</h2>
+            <h3>Contact us</h3>
             <form onSubmit={handleSubmit} className="form">
                 <div className="name">
                     <label for="firstName" id="nameLabel">First Name</label>

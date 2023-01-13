@@ -6,16 +6,13 @@ import House from './House'
 
 function Home() {
 
-
   return (
     <div className='view-page'>
-      <h2>Featured Listings</h2>
-      {/* <Navbar /> */}
-      <House />
+      <h2 className='view-title' >Featured Listings</h2>
+            <House />
         <Link to='/houses' id='more'>View More</Link>
         <Apartment />
         <Link to='/apartments' id='more'>View More</Link>
-      {/* <Footer /> */}
     </div>
   )
 }
