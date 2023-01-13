@@ -1,11 +1,12 @@
+
 .container {
     width: 50vw;
     margin: 50px auto;
-    background-color: #6ebef3;
+    background-color: #0c84d3;
     -webkit-box-shadow: -5px 5px 0px 1px rgba(0, 0, 0, 0.250);
     box-shadow: -5px 5px 0px 3px rgba(0, 0, 0, 0.250);
     text-align: center;
-    background: linear-gradient(to right, hsl(229, 55%, 57%) 0, hsl(175, 92%, 49%) 100%, hsl(197, 93%, 29%) 3%);
+    background: linear-gradient(to right, hsl(229, 42%, 65%) 0, hsl(240, 93%, 71%) 100%, hsl(197, 63%, 71%) 3%);
 
     h1 {
         text-align: center;
@@ -34,10 +35,10 @@
         margin: 0 20px 0 0;
         padding: 15px;
         font-style: italic;
-        border: 2px solid #434753;
+        border: 2px solid #4c504d;
         background: transparent;
         color: #fff;
-        outline-color: #FFD6BA;
+        outline-color: #fae6d8;
     }
 
     label[for="firstName"] {
@@ -63,7 +64,7 @@
     border: 2px solid #434753;
     background: transparent;
     color: #fff;
-    outline-color: #FFD6BA;
+    outline-color: #fbd8c0;
 
 }
 
@@ -83,7 +84,7 @@ label:not(#nameLabel) {
     border: 2px solid #434753;
     background: transparent;
     color: #ebedf2;
-    outline-color: #FFD6BA;
+    outline-color: #fed9bf;
 }
 
 .send {

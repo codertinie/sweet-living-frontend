@@ -16,18 +16,18 @@
     bottom: 0;
     text-decoration: underline;
 }
-h1{
+h2{
     font-family: 'Tangerine', cursive;
     text-decoration: underline;
     
 }
 h1:hover{
-        background-color: lightskyblue;
+        background-color: rgb(52, 167, 193);
 }
 
 
 p:hover{
-    background-color: lightskyblue;
+    background-color: rgb(21, 105, 157);
 }
 .section1{
     font-family: sans-serif;
