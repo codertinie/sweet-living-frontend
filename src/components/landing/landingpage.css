@@ -1,0 +1,40 @@
+.landing_section{
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 50%;left:50%;
+    min-width:100%; max-width:100%;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 70%;
+    /* object-fit: fill; */
+}
+
+.overlay{
+    position: absolute;
+    top:0; left:0;
+    z-index: 1;
+    /* object-fit: fill; */
+}
+
+.landingpage_text1{
+    text-align: center;
+    padding: 80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+    font-weight: 1000;
+    font-size: xx-large;
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    color: white;
+}
+
+.landingpage_text1 h1 span{
+    color: #6f73d2;
+}
+
