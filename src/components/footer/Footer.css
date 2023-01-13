@@ -4,7 +4,7 @@
     color: #fff;
     display: flex;
     background-color: #7e82e7;
-    height: 20vh;
+    height: 10vh;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -12,7 +12,7 @@
     /* min-height: 100vh; */
     flex-direction: column;
     margin-top: auto;
-    position: fixed;
+    position: relative;
     bottom: 0;
     text-decoration: underline;
 }

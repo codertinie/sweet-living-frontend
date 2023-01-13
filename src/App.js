@@ -15,9 +15,8 @@ import All_Houses from "./components/home/All_Houses"
 function App() {
   return (
   <>
-    <Router>
+  
       <Navbar />
-      <div>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="home" element={<Home /> } />
@@ -31,9 +30,7 @@ function App() {
           <Route path="*" element={<Nopage />} />
             <Route index element={<Footer/>} />
         </Routes>
-        <Footer/>
-      </div>
-    </Router>   
+        <Footer/>  
       </>
   );
 }
