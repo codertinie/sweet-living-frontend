@@ -40,5 +40,10 @@ function Signup() {
           }
         });
       }
+
+      function endNotification() {
+        setNotification(false);
+      }
+      
     }
     export default Signup;
