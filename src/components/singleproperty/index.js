@@ -1,24 +1,46 @@
 import "./singleproperty.css"
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Singleproperty = () => {
+  const [property, setProperty] = useState([])
+  const newId = useParams()  
+
+  useEffect(() => {
+    fetch("/properties")
+    .then((res) => res.json())
+    .then((resp) => {
+      console.log(resp)
+        // const propertiie = resp.filter(propertiie => propertiie.id == newId.id)
+        setProperty(resp.filter(properties => properties.id == newId.id))
+
+        console.log(property)
+    });
+
+},[])
+
+let images = property.map(item => item.image_url);
+console.log(images)
+  
     return ( 
-        
+      
+
     <div className="grid-container">
       <div className="grid-item grid-item-1">
-        <img src="https://photos.brivity.com/images/21/photo/2/0/2/1/1/0/2/1.jpg?v=0&height=493&fit=contain&quality=100&fill=FFFFFF" alt="" />
+        <img src={images} alt="" />
         {/* <h2>10.2million</h2> */}
       </div>
       <div className="grid-item grid-item-2">
-        <img src="https://photos.brivity.com/images/21/photo/2/0/2/1/1/0/2/1.jpg?v=0&height=493&fit=contain&quality=100&fill=FFFFFF" alt="" />
+        <img src={images} alt="" />
       </div>
       <div className="grid-item grid-item-3">
-        <img src="https://photos.brivity.com/images/21/photo/2/0/2/1/1/0/2/1.jpg?v=0&height=493&fit=contain&quality=100&fill=FFFFFF" alt="" />
+        <img src={images} alt="" />
       </div>
       <div className="grid-item grid-item-4">
-      <img src="https://photos.brivity.com/images/21/photo/2/0/2/1/1/0/2/1.jpg?v=0&height=493&fit=contain&quality=100&fill=FFFFFF" alt="" />
+      <img src={images} alt="" />
       </div>
       <div className="grid-item grid-item-5">
-      <img src="https://photos.brivity.com/images/21/photo/2/0/2/1/1/0/2/1.jpg?v=0&height=493&fit=contain&quality=100&fill=FFFFFF" alt="" />
+      <img src={images} alt="" />
       </div>
         <br />
       <div className="grid-item grid-item-6">
@@ -45,9 +67,11 @@ const Singleproperty = () => {
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16422.824307378964!2d36.77685855760907!3d-1.278784440052078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f19e50d31fd07%3A0x26d8fb13dd6f3964!2sKenya%20High%20School!5e0!3m2!1sen!2ske!4v1672915317158!5m2!1sen!2ske" width="400" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    
+     
+     
       
    );;
+   
   };
   
 export default Singleproperty;
