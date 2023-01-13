@@ -11,22 +11,23 @@ body{
     margin: 10px 60px;
     width: 90%;
 }
-.container{
+/* .container{
     display: flex;
-}
+} */
 .home-title{
     margin-left: 20px;
     margin-top: 15px;
     color: var(--secondary-color);
     font-family: 'Poppins', sans-serif; 
-    font-size: 20px;
+    font-size: 28px;
 }
 .view-title{
     color: var(--secondary-color);
     font-family: 'Poppins', sans-serif; 
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 900;
+    margin: 20px;
 }
 .card-container{
     justify-content: space-between;
@@ -34,12 +35,13 @@ body{
 }
 .card{
     background-color: transparent;
-    max-width: 300px;
+    max-width: 400px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .card:hover{
     transform:scale(1.1);
@@ -51,7 +53,7 @@ body{
     overflow: content-box; 
     object-fit: cover;  
     width: 100%;
-    height: 18rem;
+    height: 20rem;
     margin: auto;
     background: transparent;
 
@@ -63,18 +65,20 @@ body{
     position: relative;
     color: #fafafa;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif; 
 }
 #view-btn {
     width: fit-content;
     position: relative;
-    bottom: 60px;
-    left: 80px;
+    bottom: 80px;
+    left: 100px;
     background-color: #6F73D2;
     color: #fafafa;
     font-weight: 800;
     border-radius: 10px;
+    padding: 5px;
+    font-size: larger;
 }
 #view-btn:hover{
     background-color: red;
@@ -86,7 +90,8 @@ body{
     position: relative;
     bottom: 30px;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 900;
 }
 .rental-card{
     display:grid; 
@@ -98,5 +103,8 @@ grid-gap: 1rem;
 
 #more{
     text-align: right;
-    font-size: 15px;
+    font-size: 22px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
 }
