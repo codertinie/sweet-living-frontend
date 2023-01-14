@@ -15,8 +15,8 @@ import AllHouses from "./components/home/AllHouses"
 function App() {
   return (
   <>
+  
       <Navbar />
-      <div>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="home" element={<Home /> } />
@@ -30,8 +30,7 @@ function App() {
           <Route path="*" element={<Nopage />} />
             <Route index element={<Footer/>} />
         </Routes>
-        {/* <Footer/> */}
-      </div> 
+        <Footer/>  
       </>
   );
 }
