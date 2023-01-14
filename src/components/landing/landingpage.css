@@ -9,24 +9,24 @@ video{
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
     opacity: 70%;
-    /* object-fit: fill; */
+    object-fit: fill;
 }
 
 .overlay{
     position: absolute;
     top:0; left:0;
     z-index: 1;
-    /* object-fit: fill; */
+    object-fit: fill;
 }
 
-.landingpage_text1{
+.landingpage_text1 {
     text-align: center;
     padding: 80px;
     display:flex;
     align-items: center;
     justify-content: center;
     transition: all 0.8s;
-    font-weight: 1000;
+    font-weight: 2000;
     font-size: xx-large;
     position: absolute;
     top: 50px;
@@ -36,5 +36,12 @@ video{
 
 .landingpage_text1 h1 span{
     color: #6f73d2;
+}
+
+.landingpage_text2 span{
+    position: absolute;
+    top: 30vh;
+    left: 43%;
+    font-size: 30px;
 }
 

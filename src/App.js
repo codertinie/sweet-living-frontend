@@ -15,7 +15,6 @@ import All_Houses from "./components/home/All_Houses"
 function App() {
   return (
   <>
-    <Router>
       <Navbar />
       <div>
         <Routes>
@@ -29,11 +28,10 @@ function App() {
           <Route path="/houses" element={<All_Houses />} />
           <Route path="singleproperty" element={<Singleproperty />} />
           <Route path="*" element={<Nopage />} />
-            <Route index element={<Footer/>} />
+            {/* <Route index element={<Footer/>} /> */}
         </Routes>
         <Footer/>
-      </div>
-    </Router>   
+      </div> 
       </>
   );
 }
