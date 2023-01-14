@@ -4,7 +4,7 @@
     color: #fff;
     display: flex;
     background-color: #7e82e7;
-    height: 10vh;
+    height: 100px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -12,8 +12,8 @@
     /* min-height: 100vh; */
     flex-direction: column;
     margin-top: auto;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: 0px;
     text-decoration: underline;
 }
 h2{
