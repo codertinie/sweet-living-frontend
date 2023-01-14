@@ -27,7 +27,7 @@ function House() {
     }
 
     useEffect(() => {
-        fetch("http://localhost:3000/houses")
+        fetch("/properties")
         .then((res) => res.json())
         .then((resp) => {
             setHouses(resp)

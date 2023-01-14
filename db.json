@@ -1,163 +1,198 @@
 {
-    "houses": [
+    "properties": [
         {
             "id": 1,
             "image_url": "https://i.postimg.cc/0Qvt8X0G/house1.jpg",
             "price": "KSH. 10.4M",
             "location":"Syokimau",
-            "description":"2bd|1.75ba|1100sqft"
+            "description":"2bd|1.75ba|1100sqft",
+            "category" : "house"
         },
         {
             "id": 2,
             "image_url": "https://i.postimg.cc/Sx8jWgcz/image-3.jpg",
             "price": "KSH. 20.6M",
             "location":"Parklands Road,Westlands",
-            "description":"2bd|2ba|1300sqft"
+            "description":"2bd|2ba|1300sqft",
+            "category" : "house"
         },
         {
             "id": 3,
             "image_url": "https://i.postimg.cc/MKnnG6T5/image-4.jpg",
             "price": "KSH. 40M",
             "location":"Riverside Drive,Kilimani",
-            "description":"3bd|2.75ba|1500sqft"
+            "description":"3bd|2.75ba|1500sqft",
+            "category" : "house"
         },
         {
             "id": 4,
             "image_url": "https://i.postimg.cc/qvCQ2HmX/image-28.jpg",
             "price": "KSH. 32.5M",
             "location":"Oloitoktok Road, Kileleshwa",
-            "description":"3bd|2.75ba|1400sqft"        
+            "description":"3bd|2.75ba|1400sqft",
+            "category" : "house"        
         },
         {
             "id": 5,
             "image_url": "https://i.postimg.cc/ZRTk5x8N/image-54.jpg",
             "price": "KSH. 36.5M",
             "location":"Kindaruma Road,Kilimani",
-            "description":"4bd|3.75ba|1700sqft"        
+            "description":"4bd|3.75ba|1700sqft",
+            "category" : "house"        
         },
         {
             "id": 6,
             "image_url": "https://i.postimg.cc/YqPb4CxC/image-45.jpg",
             "price": "KSH. 37.5M",
             "location":"Matasia, Ngong",
-            "description":"3bd|2.75ba|200sqft"        },
+            "description":"3bd|2.75ba|200sqft",
+            "category" : "house"        
+        },
         {
             "id": 7,
             "image_url": "https://i.postimg.cc/HnhF3Gf0/image-52.jpg",
             "price": "KSH. 45.5M",
             "location":"Karen Road,Karen",
-            "description":"3bd|35ba|1800sqft"        },
+            "description":"3bd|35ba|1800sqft",
+            "category" : "house"        
+        },
         {
             "id": 8,
             "image_url": "https://i.postimg.cc/QMGmbYwL/image-46.jpg",
             "price": "KSH. 38.5M",
             "location":"Isinya",
-            "description":"4bd|3.75ba|2000sqft"        },
+            "description":"4bd|3.75ba|2000sqft",
+            "category" : "house"       
+        },
         {
             "id": 9,
             "image_url": "https://i.postimg.cc/L65x61LW/image-47.jpg",
             "price": "KSH. 70.5M",
             "location":"Muthaiga",
-            "description":"4bd|4ba|200sqft"        },
+            "description":"4bd|4ba|200sqft",
+            "category" : "house"        
+        },
         {
             "id": 10,
             "image_url": "https://i.postimg.cc/1tMKymtP/image-30.jpg",
             "price": "KSH. 35.5M",
             "location":"Juja Road, Juja",
-            "description":"3bd|2.75ba|2000sqft"        },
+            "description":"3bd|2.75ba|2000sqft",
+            "category" : "house"        
+        },
         {
             "id": 11,
             "image_url": "https://i.postimg.cc/vBXJgxhN/image-50.jpg",
             "price": "KSH. 40.5M",
             "location":"Langata Road, Karen",
-            "description":"3bd|2.75ba|1700sqft"        
+            "description":"3bd|2.75ba|1700sqft",
+            "category" : "house"        
         },
         {
             "id": 12,
             "image_url": "https://i.postimg.cc/nLKbxPDZ/image-53.jpg",
             "price": "KSH. 52.5M",
             "location":"Gigiri",
-            "description":"3bd|2.75ba|1800sqft"        }
-    ],
-    "apartments": [
+            "description":"3bd|2.75ba|1800sqft",
+            "category" : "house"        
+        },
+    
         {
             "id": 13,
             "image_url": "https://i.postimg.cc/d1ySzQL1/image-10.jpg",
             "price": "KSH. 65,000",
             "location":"South C",
-            "description":"3bd|2.75ba"        },
+            "description":"3bd|2.75ba",
+            "category" : "apartment"        
+        },
         {
             "id": 14,
             "image_url": "https://i.postimg.cc/mkW6RxHS/image-9.jpg",
             "price": "KSH. 65,000",
             "location":"South B",
-            "description":"3bd|2.75ba"        },
+            "description":"3bd|2.75ba",
+            "category" : "apartment"         
+        },
         {
             "id": 15,
             "image_url": "https://i.postimg.cc/zvT6RDrM/image-58.jpg",
             "price": "KSH. 90,000",
             "location":"Dennis Pritt Road, Kilimani",
-            "description":"3bd|2.75ba"        },
+            "description":"3bd|2.75ba",
+            "category" : "apartment"         
+        },
         {
             "id": 16,
             "image_url": "https://i.postimg.cc/02qL1SGq/image-56.jpg",
             "price": "KSH. 85,000",
             "location":"Waiyaki Way, Westlands",
-            "description":"2bd|1.75ba"        
+            "description":"2bd|1.75ba",
+            "category" : "apartment"         
         },
         {
             "id": 17,
             "image_url": "https://i.postimg.cc/ry4vHjrJ/image-55.jpg",
             "price": "KSH. 106,000",
             "location":"Kirawa Road, Kitisuru",
-            "description":"3bd|2.75ba"        
+            "description":"3bd|2.75ba",
+            "category" : "apartment"         
         },
         {
             "id": 18,
             "image_url": "https://i.postimg.cc/yYX21Nn3/image-57.jpg",
             "price": "KSH. 100,000",
             "location":"Kingara Road, Lavington",
-            "description":"3bd|3.75ba"        },
+            "description":"3bd|3.75ba",
+            "category" : "apartment"         
+        },
         {
             "id": 19,
             "image_url": "https://i.postimg.cc/sgjqvR06/image-49.jpg",
             "price": "KSH. 60,000",
             "location":"Thindigua",
-            "description":"4bd|3ba"        },
+            "description":"4bd|3ba",
+            "category" : "apartment"         
+        },
         {
             "id": 20,
             "image_url": "https://i.postimg.cc/Mp94BrCW/image-44.jpg",
             "price": "KSH. 62,000",
             "location":"Kiambu Road",
-            "description":"3bd|2ba"        
+            "description":"3bd|2ba",
+            "category" : "apartment"         
         },
         {
             "id": 21,
             "image_url": "https://i.postimg.cc/j5wGtQkR/image-33.jpg",
             "price": "KSH. 63,000",
             "location":"Roasters,Thika Road",
-            "description":"3bd|2ba"        
+            "description":"3bd|2ba",
+            "category" : "apartment"         
         },
         {
             "id": 22,
             "image_url": "https://i.postimg.cc/pTw3Thgz/image-32.jpg",
             "price": "KSH. 55,000",
             "location":"Mombasa Road,Imara Daima",
-            "description":"3bd|2ba"       
+            "description":"3bd|2ba",
+            "category" : "apartment"        
         },
         {
             "id": 23,
             "image_url": "https://i.postimg.cc/wB3rQQzD/image-31.jpg",
             "price": "KSH. 58,000",
             "location":"Nyayo Estate, Mombasa Road",
-            "description":"3bd|2ba"        
+            "description":"3bd|2ba",
+            "category" : "apartment"         
         },
         {
             "id": 24,
             "image_url": "https://i.postimg.cc/pTw3Thgz/image-32.jpg",
             "price": "KSH. 58,000",
             "location":"Nyayo Estate, Mombasa Road",
-            "description":"3bd|2ba"        
+            "description":"3bd|2ba",
+            "category" : "apartment"         
         }
     ]
+    
 }

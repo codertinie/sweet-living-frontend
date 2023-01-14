@@ -55,6 +55,7 @@ function Login() {
 
    
       return (
+        <div className="boddy">
         <div className="container">
           <form>
             <p>Sweet Living</p>
@@ -70,6 +71,7 @@ function Login() {
             <div className="drop drop-4"></div>
             <div className="drop drop-5"></div>
           </div>
+        </div>
         </div>
       );
     }
