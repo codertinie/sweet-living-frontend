@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Card from './Card';
 import './home.css'
 
-function All_Houses() {
+function AllHouses() {
     const [houses, setHouses] = useState([])
 
     useEffect(() => {
@@ -29,4 +29,4 @@ function All_Houses() {
     )
 }
 
-export default All_Houses
+export default AllHouses

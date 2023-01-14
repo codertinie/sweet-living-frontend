@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Card from './Card';
 import './home.css'
 
-function All_Apartments() {
+function AllApartments() {
   const [apartments, setApartments] = useState([])
 
   useEffect(() => {
@@ -29,4 +29,4 @@ function All_Apartments() {
     )
 }
 
-export default All_Apartments
+export default AllApartments
