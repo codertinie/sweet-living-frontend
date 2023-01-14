@@ -26,7 +26,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="/apartments" element={<AllApartments />} />
           <Route path="/houses" element={<AllHouses />} />
-          <Route path="singleproperty" element={<Singleproperty />} />
+          <Route path="singleproperty/:id" element={<Singleproperty />} />
           <Route path="*" element={<Nopage />} />
             <Route index element={<Footer/>} />
         </Routes>
