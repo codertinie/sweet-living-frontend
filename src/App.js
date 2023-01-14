@@ -9,15 +9,14 @@ import Navbar from "./components/navbar";
 import Contact from "./components/contact/Form";
 import About from "./components/about/About.js";
 import Nopage from "./components/nopage";
-import All_Apartments from "./components/home/All_Apartments"
-import All_Houses from "./components/home/All_Houses"
+import AllApartments from "./components/home/AllApartments"
+import AllHouses from "./components/home/AllHouses"
 
 function App() {
   return (
   <>
-    <Router>
+  
       <Navbar />
-      <div>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="home" element={<Home /> } />
@@ -25,15 +24,13 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="/apartments" element={<All_Apartments />} />
-          <Route path="/houses" element={<All_Houses />} />
-          <Route path="singleproperty" element={<Singleproperty />} />
+          <Route path="/apartments" element={<AllApartments />} />
+          <Route path="/houses" element={<AllHouses />} />
+          <Route path="singleproperty/:id" element={<Singleproperty />} />
           <Route path="*" element={<Nopage />} />
             <Route index element={<Footer/>} />
         </Routes>
-        <Footer/>
-      </div>
-    </Router>   
+        <Footer/>  
       </>
   );
 }

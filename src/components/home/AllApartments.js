@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react';
 import Card from './Card';
 import './home.css'
 
-function All_Apartments() {
+function AllApartments() {
   const [apartments, setApartments] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3000/apartments")
+    fetch("/properties")
     .then((res) => res.json())
     .then((resp) => {
         setApartments(resp)
@@ -19,7 +19,7 @@ function All_Apartments() {
         <div className='rentals'>
                     <h2 className='view-title'>Apartments Listings</h2>
                     <div className='rental-card'>
-                        {apartments.map((card) => {
+                        {apartments.filter(property => property.category == "apartment").map((card) => {
                         return(
                         <Card key={card.id} card={card}/>)
                     })}
@@ -29,4 +29,4 @@ function All_Apartments() {
     )
 }
 
-export default All_Apartments
+export default AllApartments
