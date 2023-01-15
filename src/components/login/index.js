@@ -38,7 +38,7 @@ function Login() {
                     //use session storage to store user data
                     sessionStorage.setItem("user", JSON.stringify(user));
                     //redirect to home page
-                    window.location.href = "/";
+                    window.location.href = "/home";
 
                 });
             } else {
@@ -54,10 +54,11 @@ function Login() {
     }
 
 
-
+  
    
       return (
-        <div className="container">
+        <div className="boddy">
+        <div className="container1">
           <form>
             <p>Sweet Living</p>
             <input type="email" placeholder="Email" id="email"required="required" value={email} onChange={e=>setEmail(e.target.value)}/><br />
@@ -74,6 +75,8 @@ function Login() {
             <div className="drop drop-5"></div>
           </div>
         </div>
+        </div>
+        
       );
     }
     

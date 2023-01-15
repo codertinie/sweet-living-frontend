@@ -46,7 +46,7 @@ function Signup() {
       }
       return (
         <div className="boddy">
-        <div className="container">
+        <div className="container1">
           <form>
             <p>Sweet Living</p>
             <input type="text" placeholder="Username" required="required" value={username} onChange={e=>setUsername(e.target.value)} /><br />
