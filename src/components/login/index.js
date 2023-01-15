@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./Login.css";
+//import { Link } from 'react-router-dom';
 //import bootstrap
 
 
@@ -41,10 +42,12 @@ function Login() {
                     window.location.href = "/home";
 
                 });
+                //handle error and notify user
             } else {
-                res.json().then((error) => setError(error.message));
-
-
+                res.json().then((error) => {
+                    setError(error);
+                    notifyuser();
+                });
             }
         });
     }
@@ -63,9 +66,12 @@ function Login() {
             <p>Sweet Living</p>
             <input type="email" placeholder="Email" id="email"required="required" value={email} onChange={e=>setEmail(e.target.value)}/><br />
             <input type="password" placeholder="Password" required="required" value={password} onChange={e=>setPassword(e.target.value)} /><br />
-            <input type="button" value="Sign in" onClick={submitHandler}/><br />
+            <input type="submit" value="Sign in" onClick={submitHandler}/><br />
+           
+            
        
-            <a href="./signup/index.js">Sign up?</a>
+            
+            {/* <Link to='/signup'>Sign up?</Link> */}
           </form>
           <div className="drops">
             <div className="drop drop-1"></div>
