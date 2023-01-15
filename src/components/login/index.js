@@ -25,7 +25,7 @@ function Login() {
     function submitHandler(event){
         setError(null);
         event.preventDefault();
-        fetch("http://localhost:3000/", {
+        fetch("http://localhost:3000/buyer", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -35,8 +35,10 @@ function Login() {
             if (res.ok){
                 res.json().then((user) => {
                     notifyuser();
-                    localStorage.setItem("user", JSON.stringify(user));
-                    localStorage.setItem("token", user.token);
+                    //use session storage to store user data
+                    sessionStorage.setItem("user", JSON.stringify(user));
+                    //redirect to home page
+                    window.location.href = "/";
 
                 });
             } else {
@@ -61,7 +63,8 @@ function Login() {
             <input type="email" placeholder="Email" id="email"required="required" value={email} onChange={e=>setEmail(e.target.value)}/><br />
             <input type="password" placeholder="Password" required="required" value={password} onChange={e=>setPassword(e.target.value)} /><br />
             <input type="button" value="Sign in" onClick={submitHandler}/><br />
-            <a href="#">Forgot Password?</a>
+       
+            <a href="./signup/index.js">Sign up?</a>
           </form>
           <div className="drops">
             <div className="drop drop-1"></div>
