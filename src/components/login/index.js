@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./Login.css";
+//import { Link } from 'react-router-dom';
 //import bootstrap
 
 
@@ -25,7 +26,7 @@ function Login() {
     function submitHandler(event){
         setError(null);
         event.preventDefault();
-        fetch("http://localhost:3000/", {
+        fetch("http://localhost:3000/buyer", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -35,14 +36,18 @@ function Login() {
             if (res.ok){
                 res.json().then((user) => {
                     notifyuser();
-                    localStorage.setItem("user", JSON.stringify(user));
-                    localStorage.setItem("token", user.token);
+                    //use session storage to store user data
+                    sessionStorage.setItem("user", JSON.stringify(user));
+                    //redirect to home page
+                    window.location.href = "/home";
 
                 });
+                //handle error and notify user
             } else {
-                res.json().then((error) => setError(error.message));
-
-
+                res.json().then((error) => {
+                    setError(error);
+                    notifyuser();
+                });
             }
         });
     }
@@ -52,16 +57,21 @@ function Login() {
     }
 
 
-
+  
    
       return (
-        <div className="container">
+        <div className="boddy">
+        <div className="container1">
           <form>
             <p>Sweet Living</p>
             <input type="email" placeholder="Email" id="email"required="required" value={email} onChange={e=>setEmail(e.target.value)}/><br />
             <input type="password" placeholder="Password" required="required" value={password} onChange={e=>setPassword(e.target.value)} /><br />
-            <input type="button" value="Sign in" onClick={submitHandler}/><br />
-            <a href="#">Forgot Password?</a>
+            <input type="submit" value="Sign in" onClick={submitHandler}/><br />
+           
+            
+       
+            
+            {/* <Link to='/signup'>Sign up?</Link> */}
           </form>
           <div className="drops">
             <div className="drop drop-1"></div>
@@ -71,6 +81,8 @@ function Login() {
             <div className="drop drop-5"></div>
           </div>
         </div>
+        </div>
+        
       );
     }
     
