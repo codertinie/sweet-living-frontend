@@ -11,9 +11,6 @@ function Login() {
     const [error, setError] = useState(null);
     const [email, setEmail] = useState("");
     const [notify, setNotify] = useState(false);
-    
-    
-
 
 //function notify user
     function notifyuser() {
