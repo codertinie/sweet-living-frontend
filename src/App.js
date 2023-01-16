@@ -11,7 +11,7 @@ import About from "./components/about/About.js";
 import Nopage from "./components/nopage";
 import AllApartments from "./components/home/AllApartments"
 import AllHouses from "./components/home/AllHouses"
-import SellerPage from "./components/sellerpage";
+import SellerPage from "./components/SellerPage/sellerpage";
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
           <Route path="/apartments" element={<AllApartments />} />
           <Route path="/houses" element={<AllHouses />} />
           <Route path="singleproperty/:id" element={<Singleproperty />} />
-          <Route path="/sellerpage" element={<SellerPage />}/>
+          <Route path="/seller" element={<SellerPage />}/>
           <Route path="*" element={<Nopage />} />
             <Route index element={<Footer/>} />
         </Routes>
