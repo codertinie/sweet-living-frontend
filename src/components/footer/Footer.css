@@ -12,15 +12,15 @@
     /* min-height: 100vh; */
     flex-direction: column;
     margin-top: auto;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     text-decoration: underline;
 }
-h2{
+/* h2{
     font-family: 'Tangerine', cursive;
     text-decoration: underline;
     
-}
+} */
 h1:hover{
         background-color: rgb(52, 167, 193);
 }

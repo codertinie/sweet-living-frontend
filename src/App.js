@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Landing from "./components/landing";
-import Footer from "./components/footer/Footer.js";
+// import Footer from "./components/footer/Footer.js";
 import Login from "./components/login";
 import Signup from "./components/signup";
 import Singleproperty from "./components/singleproperty";
@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <div>
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/" element={<Landing />}/>
           <Route path="home" element={<Home /> } />
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
@@ -28,9 +28,8 @@ function App() {
           <Route path="/houses" element={<All_Houses />} />
           <Route path="singleproperty" element={<Singleproperty />} />
           <Route path="*" element={<Nopage />} />
-            {/* <Route index element={<Footer/>} /> */}
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </div> 
       </>
   );

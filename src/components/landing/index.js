@@ -2,6 +2,7 @@ import React from "react";
 import "./landingpage.css";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import music from "./video1.mp4";
+import { useNavigate } from "react-router-dom";
 
 function Landing(){
     window.addEventListener('scroll', windowScrolled)
@@ -15,6 +16,20 @@ function Landing(){
         }else {
             icon.style.display = "block"
         }
+    }
+
+    const navigate = useNavigate()
+
+    function handleBuyHouse(){
+        navigate("/houses")
+    }
+
+    function handleRentHouse(){
+        navigate("/apartments")
+    }
+
+    function handleSellHouse(){
+        navigate("/sellerpage")
     }
     return(
         <>
@@ -32,11 +47,11 @@ function Landing(){
             <section className="landing_section">
 
                 <div>
-                    <h1 className="landingpage_text1"><strong>The Sweetest <span>Real Estate</span></strong></h1>
+                    <h1 className="landingpage_text1">The Sweetest&nbsp;<span id="hd1">Real Estate</span></h1>
                 </div>
 
                 <div>
-                    <h2 className="landingpage_text2"><span>In Kenya, NRB</span></h2>
+                    <h2 className="landingpage_text2">In Kenya, NRB</h2>
                 </div>
 
                 <div className="scroll_down_image_container">
@@ -45,15 +60,15 @@ function Landing(){
 
                 <div className="landingpage_buttons_width">
                 <div className="landingpage_buttons">
-                    <button className="buy_house_button">
+                    <button onClick={handleBuyHouse} className="buy_house_button">
                         Buy House
                     </button>
 
-                    <button className="rent_house_button">
+                    <button onClick={handleRentHouse} className="rent_house_button">
                         Rent House
                     </button>
 
-                    <button className="sell_house_button">
+                    <button onClick={handleSellHouse} className="sell_house_button">
                         Sell House
                     </button>
                 </div>
