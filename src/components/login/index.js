@@ -26,7 +26,7 @@ function Login() {
     function submitHandler(event){
         setError(null);
         event.preventDefault();
-        fetch("http://localhost:3000/buyer", {
+        fetch(" http://127.0.0.1:3000/buyers", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
