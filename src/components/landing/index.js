@@ -1,6 +1,36 @@
 import React from "react";
+import "./landingpage.css";
+import { BsChevronDoubleDown } from "react-icons/bs";
+import music from "./video1.mp4";
+import { useNavigate } from "react-router-dom";
 
-function landing(){
+function Landing(){
+    window.addEventListener('scroll', windowScrolled)
+
+    function windowScrolled(){
+        const yScroll = window.scrollY
+        const icon = document.getElementById('scroll_down_icon')
+
+        if (yScroll >= 100){
+            icon.style.display = "none"
+        }else {
+            icon.style.display = "block"
+        }
+    }
+
+    const navigate = useNavigate()
+
+    function handleBuyHouse(){
+        navigate("/houses")
+    }
+
+    function handleRentHouse(){
+        navigate("/apartments")
+    }
+
+    function handleSellHouse(){
+        navigate("/sellerpage")
+    }
     return(
         <>
 
@@ -55,4 +85,4 @@ function landing(){
     )
 }
 
-export default landing;
+export default Landing;
