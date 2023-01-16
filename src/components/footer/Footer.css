@@ -12,8 +12,8 @@
     /* min-height: 100vh; */
     flex-direction: column;
     margin-top: auto;
-    position: absolute;
-    bottom: 0px;
+    /* position: absolute;
+    bottom: 0px; */
     text-decoration: underline;
 }
 h2{

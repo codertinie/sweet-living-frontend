@@ -21,7 +21,9 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="home" element={<Home /> } />
+          <Route path="home" element={<Home /> } >
+            <Route index element={<Footer/>} />
+          </Route>
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
@@ -31,9 +33,9 @@ function App() {
           <Route path="singleproperty/:id" element={<Singleproperty />} />
           <Route path="/sellerpage" element={<SellerPage />}/>
           <Route path="*" element={<Nopage />} />
-            <Route index element={<Footer/>} />
+            
         </Routes>
-        <Footer/>  
+        {/* <Footer/>   */}
       </>
   );
 }
