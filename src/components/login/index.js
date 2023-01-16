@@ -10,9 +10,6 @@ function Login() {
     const [error, setError] = useState(null);
     const [email, setEmail] = useState("");
     const [notify, setNotify] = useState(false);
-    
-    
-
 
 //function notify user
     function notifyuser() {
@@ -37,7 +34,6 @@ function Login() {
                     notifyuser();
                     localStorage.setItem("user", JSON.stringify(user));
                     localStorage.setItem("token", user.token);
-
                 });
             } else {
                 res.json().then((error) => setError(error.message));
@@ -51,9 +47,6 @@ function Login() {
         setNotify(false);
     }
 
-
-
-   
       return (
         <div className="boddy">
         <div className="container">

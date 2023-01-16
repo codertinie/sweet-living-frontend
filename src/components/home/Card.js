@@ -13,7 +13,7 @@ function Card({card}) {
                 <div class="card-img-overlay d-flex flex-column">
                     <div className="mt-auto">
                         <p id='overlay-text'><em>KSH.{card.price}/m</em></p>
-                        <p id='overlay-text'><em>{card.description}</em></p>
+                        <p id='overlay-text'><em>{card.houses}</em></p>
                         <Link to={`/singleproperty/${card.id}`} >
                         <button id='view-btn'>View</button>
                         </Link>
