@@ -45,7 +45,7 @@ function Signup() {
         setNotification(false);
       }
       return (
-        <div className="boddy">
+      <div className="boddy">
         <div className="container1">
           <form>
             <p>Sweet Living</p>
@@ -53,7 +53,7 @@ function Signup() {
             <input type="email" placeholder="Email" id="email"required="required" value={email} onChange={e=>setEmail(e.target.value)}/><br />
             <input type="number" placeholder="Phone Number" required="required" value={phone} onChange={e=>setPhone(e.target.value)} /><br />
             <input type="password" placeholder="Password" required="required" value={password} onChange={e=>setPassword(e.target.value)} /><br />
-            <input type="password" placeholder="Confirm Password" required="required" value={passwordConfirm} onChange={e=>setPasswordConfirm(e.target.value)} /><br />
+          
             <input type="button" value="Sign in" onClick={submitHandler}/><br />
             <a href="#">Log in?</a>
           </form>
@@ -65,7 +65,7 @@ function Signup() {
             <div className="drop drop-5"></div>
           </div>
         </div>
-        </div>
+      </div>
       );
 
 
