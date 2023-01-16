@@ -1,16 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './home.css'
+
 
 function Card({card}) {
 
+
     return (
         <div className='card-container' >
-            <div className='card shadow s-white rounded' >
-                <img src={card.image_url} alt=''/>
-                <h4 className='card-price'>{card.price}</h4>
-                <button id='view-btn'>View</button>
-                <h4 className='location-description'>{card.location}</h4>
-                <h4 className='location-description'>{card.description}</h4>
+            <div className="card shadow s-white rounded text-white">
+                <img className="card-img" src={card.image_url} alt="Card image"/>
+                <div class="card-img-overlay d-flex flex-column">
+                    <div className="mt-auto">
+                        <p id='overlay-text'><em>KSH.{card.price}/m</em></p>
+                        <p id='overlay-text'><em>{card.houses}</em></p>
+                        <Link to={`/singleproperty/${card.id}`} >
+                        <button id='view-btn'>View</button>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </div>
     )
