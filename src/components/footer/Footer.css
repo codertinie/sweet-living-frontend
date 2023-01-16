@@ -13,7 +13,8 @@
     flex-direction: column;
     margin-top: auto;
     position: absolute;
-    bottom: 0px;
+    bottom: ;
+    top: 100%;
     text-decoration: underline;
 }
 h2{

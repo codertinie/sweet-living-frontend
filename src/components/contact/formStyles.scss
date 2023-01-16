@@ -1,14 +1,18 @@
-
+.main{
+    height: 77vh;
+    background-color: #dbdcf0;
+}
 .container {
     width: 50%;
-    height: 50%;
+    height: 80%;
+    
     margin: 50px auto;
     background-color: #0c84d3;
     -webkit-box-shadow: -5px 5px 0px 1px rgba(0, 0, 0, 0.250);
     box-shadow: -5px 5px 0px 3px rgba(0, 0, 0, 0.250);
     text-align: center;
     background: linear-gradient(to right, hsl(229, 42%, 65%) 0, hsl(240, 93%, 71%) 100%, hsl(197, 63%, 71%) 3%);
-
+    
     h1 {
         text-align: center;
         margin: 30px 0;
