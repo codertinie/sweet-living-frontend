@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Landing from "./components/landing";
 import Footer from "./components/footer/Footer.js";
@@ -20,7 +20,7 @@ function App() {
   
       <Navbar />
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/" element={<Landing />}/>
           <Route path="home" element={<Home /> } />
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
@@ -31,7 +31,6 @@ function App() {
           <Route path="singleproperty/:id" element={<Singleproperty />} />
           <Route path="/sellerpage" element={<SellerPage />}/>
           <Route path="*" element={<Nopage />} />
-            <Route index element={<Footer/>} />
         </Routes>
         <Footer/>  
       </>
