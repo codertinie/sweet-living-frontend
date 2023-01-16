@@ -80,9 +80,6 @@ function Landing(){
                 
 
             </section>
-                {/* <div>
-                     <h1>This is will be our landing page</h1>
-             </div> */}
         </>
 
     )
