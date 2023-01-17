@@ -63,7 +63,7 @@ function Login() {
             <p>Sweet Living</p>
             <input type="email" placeholder="Email" id="email"required="required" value={email} onChange={e=>setEmail(e.target.value)}/><br />
             <input type="password" placeholder="Password" required="required" value={password} onChange={e=>setPassword(e.target.value)} /><br />
-            <input type="submit" value="Sign in" onClick={submitHandler}/><br />
+            <input type="button" value="Sign in" onClick={submitHandler}/><br />
            
             
        
