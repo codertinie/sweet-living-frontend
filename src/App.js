@@ -22,20 +22,26 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="home" element={<Home /> } >
-            {/* <Route index element={<Footer/>} /> */}
+            <Route index element={<Footer/>} />
           </Route>
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="/apartments" element={<AllApartments />} />
-          <Route path="/houses" element={<AllHouses />} />
-          <Route path="singleproperty/:id" element={<Singleproperty />} />
+          <Route path="/apartments" element={<AllApartments />} >
+            <Route index element={<Footer/>} />
+          </Route>
+          <Route path="/houses" element={<AllHouses />} >
+            <Route index element={<Footer/>} />
+          </Route>
+          <Route path="singleproperty/:id" element={<Singleproperty />} >
+            <Route index element={<Footer/>} />
+          </Route>
           <Route path="/sellerpage" element={<SellerPage />}/>
           <Route path="*" element={<Nopage />} />
             
         </Routes>
-        {/* <Footer/>   */}
+
       </>
   );
 }
