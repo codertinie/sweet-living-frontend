@@ -27,12 +27,16 @@ const Singleproperty = () => {
   
 },[])
 
-let images = property.map(item => item.image_url);
+let image = property.map(item => item.image_url);
+let image2 = property.map(item => item.image_url2);
+let image3 = property.map(item => item.image_url3);
+let image4 = property.map(item => item.image_url4);
+let image5 = property.map(item => item.image_url5);
 let description = property.map(item => item.description)
 let seller = property.map(item => item.seller)
 
 
-
+console.log(property)
 console.log(description)
   function handleClick (){
     fetch(`/properties/${newId.id}`, {
@@ -75,20 +79,20 @@ console.log(description)
 
     <div className="grid-container">
       <div className="grid-item grid-item-1">
-        <img src={images} alt="" />
+        <img src={image} alt="" />
         {/* <h2>10.2million</h2> */}
       </div>
       <div className="grid-item grid-item-2">
-        <img src={images} alt="" />
+        <img src={image2} alt="" />
       </div>
       <div className="grid-item grid-item-3">
-        <img src={images} alt="" />
+        <img src={image3} alt="" />
       </div>
       <div className="grid-item grid-item-4">
-      <img src={images} alt="" />
+      <img src={image4} alt="" />
       </div>
       <div className="grid-item grid-item-5">
-      <img src={images} alt="" />
+      <img src={image5} alt="" />
       </div>
       
         <br />
