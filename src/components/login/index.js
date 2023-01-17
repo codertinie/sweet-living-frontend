@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./Login.css";
+import "../LoginSignupStyle/LoginSignup.css";
 //import { Link } from 'react-router-dom';
 //import bootstrap
 

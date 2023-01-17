@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./Signup.css";
+import "../LoginSignupStyle/LoginSignup.css";
 
 function Signup() {
     const [username, setUsername] = useState("");
@@ -19,12 +19,17 @@ function Signup() {
     }
 
     function submitHandler(e) {
-        e.preventDefault();
-        fetch("", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+      e.preventDefault();
+      if (!username || !password || !email || !phone || !passwordConfirm) {
+          setError("All fields are required. Please fill out all fields.");
+          return;
+      }
+      setError(null);
+      fetch(" http://127.0.0.1:3000/buyers", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
           body: JSON.stringify({
             username,
             email,
@@ -51,10 +56,11 @@ function Signup() {
             <p>Sweet Living</p>
             <input type="text" placeholder="Username" required="required" value={username} onChange={e=>setUsername(e.target.value)} /><br />
             <input type="email" placeholder="Email" id="email"required="required" value={email} onChange={e=>setEmail(e.target.value)}/><br />
-            <input type="number" placeholder="Phone Number" required="required" value={phone} onChange={e=>setPhone(e.target.value)} /><br />
+            <input type="number" placeholder="Phone Number" required="required" value={phone} onChange={e=>setPhone(e.target.value)} className="no-spin"/><br />
+
+
             <input type="password" placeholder="Password" required="required" value={password} onChange={e=>setPassword(e.target.value)} /><br />
-          
-            <input type="button" value="Sign in" onClick={submitHandler}/><br />
+            <input type="button" value="Sign up" onClick={submitHandler}/><br />
             <a href="#">Log in?</a>
           </form>
           <div className="drops">
@@ -70,4 +76,4 @@ function Signup() {
 
 
     }
-    export default Signup;
+  export default Signup;
