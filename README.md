@@ -1,71 +1,96 @@
-# Getting Started with Create React App
+# SWEET-LIVING FRONTEND WEB APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Table of contents
+1. [Description](#description)
+2. [Screenshots](#screenshots)
+3. [Setup and installation instructions](#setup-and-installation-instructions)
+  - [Setting up the Frontend](#setting-up-the-frontend)
+  - [Live Links](#live-links)
+4. [Known bugs](#known-bugs)
+5. [Technologies used](#technologies-used)
+6. [Support and Contact details](#support-and-contact-details)
+7. [License](#license)
+8. [Collaborators](#collaborators)
 
-## Available Scripts
+# Description
+Swee-Living website allows realtors and users around the world to buy,sell and rent real estate properties . A user is able to to log into the plaform, view the available real estate properties and decide whether they will purchase it. 
 
-In the project directory, you can run:
+# Screenshots
+![Screenshot1]()
 
-### `npm start`
+![Screenshot2]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Setup and installation instructions
+  ## Requirements
+- NodeJS (v16), and npm
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Install NodeJS
 
-### `npm test`
+Verify you are running a recent version of Node with:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+node -v
+```
 
-### `npm run build`
+If your Node version is not 16.x.x, install it and set it as the current and
+default version with:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+nvm install 16
+nvm use 16
+nvm alias default 16
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can also update your npm version with:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm i -g npm
+```
+ 
+ ### Setting up the frontend
+- Start by cloning the repository to your computer from https://github.com/Tjay114/sweet-living-frontend
+- When you're ready to start building your project, run:
 
-### `npm run eject`
+```
+npm install 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm start 
+```
+- `npm start `: run the frontend on
+  [http://localhost:4000](http://localhost:4000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Open the project using your preferred code editor, preferably Visual studio to inspect the code.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Live Links
+- Frontend- [http://localhost:4000](http://localhost:4000)
+# Known bugs
+There are no known bugs in this project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Technologies used
+1. HTML
+2. CSS
+3. Javascript
+4. React
+5. Bootstrap
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Support and Contact details
+- terah.mumuli@student.moringaschool.com
+- abdulaziz.abdullahi@student.moringaschool.com
+- john.kihara@student.moringaschool.com
+- barbra.mududa@student.moringaschool.com
+- isaac.sindiga@student.moringaschool.com
+- jane.kigenyi@student.moringaschool.com
+- martin.munyao@student.moringaschool.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# License
+This project is under [MIT]() license.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# sweet-living-frontend
+# Collaborators
+- Terah Mumuli
+- Martin Munyao
+- Abdulaziz Abdullahi
+- Barbra Mududa
+- Jane Kigenyi
+- Milton Kihara
+- Isaac Sindiga
