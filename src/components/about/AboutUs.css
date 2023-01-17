@@ -6,19 +6,16 @@
     height: 82vh;
     padding: 4px;
     text-align: center;
+    align-items: center;
     background: linear-gradient(to right, hsl(229, 73%, 37%) 0, hsl(175, 88%, 48%) 100%, hsl(197, 70%, 44%) 3%);
-    position: relative;
+    /* position: relative; */
+
     
 }
 
-h1 {
-    background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
-    background-size: 20%;
-    background-position: 50% 50%;
-    -webkit-background-clip: text;
-    color: hsla(0, 0%, 0%, 0.08);
-    animation: zoomout 10s ease 500ms forwards;
-    font-size: 70px;
+h5 {
+    color: hsla(262, 95%, 41%, 0.08);
+    font-size: 80px;
 
 }
 
@@ -28,21 +25,18 @@ h1 {
     padding: 24px;
     text-align: center;
     width: 50%;
-    height: 68vh
+    /* height: 68vh */
 }
 
-span {
+/* span {
     color: crimson;
     text-align: center;
-}
+} */
 
 .about-img {
-    /* position: relative; */
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #fff;
-    margin: 4px;
-    /* height: 400px; */
     width: 50%;
+}
+
+.about-image {
+    width: 100%;
 }

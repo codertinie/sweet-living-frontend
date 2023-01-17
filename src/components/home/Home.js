@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, Outlet } from "react-router-dom";
 import Apartment from './Apartment'
 import './home.css'
 import House from './House'
@@ -13,6 +13,7 @@ function Home() {
         <Link to='/houses' id='more'>View More</Link>
         <Apartment />
         <Link to='/apartments' id='more'>View More</Link>
+        <Outlet/>
     </div>
   )
 }

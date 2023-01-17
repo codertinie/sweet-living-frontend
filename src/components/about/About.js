@@ -6,9 +6,10 @@ function About() {
     return(
         <div className="about ">
                 <div className='about-img'> 
+                <img className='about-image' src="https://res.cloudinary.com/dbonqtd6j/image/upload/v1673959649/woman_fc8as7.jpg" alt='woman in construction hat'/>
                 </div> 
             <div className ='content'>
-                <h1>About Us</h1>
+                <h5>About Us</h5>
                 <p>Sweet Living Homes is a pre-eminent real estate focussed in delivering high quality and customised servises to our client.<br/>
                      <span>Our Vision</span> <br/> We offer affodable houses for sale, rent and also allow property owners to showcase, sell or rent their houses to our clients 
                      by posting the houses on our website.<br/>

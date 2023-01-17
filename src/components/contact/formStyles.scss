@@ -1,8 +1,9 @@
 .main{
     height: 77vh;
-    background-color: #dbdcf0;
+    background-color: #a8acee;
+    border-radius: 12px;
 }
-.container {
+.App {
     width: 50%;
     height: 80%;
     
@@ -13,8 +14,8 @@
     text-align: center;
     background: linear-gradient(to right, hsl(229, 42%, 65%) 0, hsl(240, 93%, 71%) 100%, hsl(197, 63%, 71%) 3%);
     
-    h1 {
-        text-align: center;
+    h3 {
+        text-align: right;
         margin: 30px 0;
         color: #6F73D2;
     }
@@ -23,13 +24,14 @@
 .form {
     display: flex;
     flex-direction: column;
+    height: 50vh;
 
 }
 
 
 .name {
     margin: 25px auto;
-    display: flex;
+    display: flexbox;
     position: relative;
     justify-content: space-between;
     width: 90%;
@@ -49,7 +51,7 @@
     label[for="firstName"] {
         position: absolute;
         top: -30px;
-        left: 0;
+        left: 20px;
     }
 
     label[for="lastName"] {
@@ -63,20 +65,20 @@
 .email {
     width: 50%;
     margin: 0 0 20px 35px;
-    height: 40px;
+    height: 45px;
     padding: 15px;
     font-style: italic;
     border: 2px solid #434753;
     background: transparent;
     color: #fff;
-    outline-color: #fbd8c0;
+    outline-color: #22211f;
 
 }
 
 //have you ever used this selector before
 
 label:not(#nameLabel) {
-    margin-left: 35px;
+    margin-left: 25px;
     margin-bottom: 10px;
 }
 
