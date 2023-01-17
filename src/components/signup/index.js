@@ -50,6 +50,7 @@ function Signup() {
         setNotification(false);
       }
       return (
+      
       <div className="boddy">
         <div className="container1">
           <form>
