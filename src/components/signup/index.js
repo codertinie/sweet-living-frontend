@@ -1,73 +1,161 @@
-import React, {useState} from "react";
-import "./Signup.css";
+import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import "../LoginSignupStyle/LoginSignup.css";
+function Signup({ onSignup }) {
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone_number, setPhone] = useState("")
+  const [password, setPassword] = useState("");
+  const [passwordConfirmation, setPasswordConfirmation] = useState("");
+  const [notification,setNotification] = useState(false);
 
-function Signup() {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState(null);
-    const [email, setEmail] = useState("");
-    const [notify, setNotify] = useState(false);
-    const [passwordConfirm, setPasswordConfirm] = useState(false);
-    const [phone, setPhone] = useState("");
-    const [notification, setNotification] = useState(false);
+function handleNotification(){
+    setNotification((notification) => !notification);
+    setTimeout(endNotification, 1000);
+}
 
-    function handleNotification() {
-        setNotification((notification)=>!notification);
-        setTimeout(() => {
-            setNotification(false);
-        }, 3000);
-    }
+function endNotification(){
+    setNotification((notification) => !notification);
+    navigate("/login")
+}
 
-    function submitHandler(e) {
-        e.preventDefault();
-        fetch("", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            username,
-            email,
-            p_number: phone,
-            password,
-            password_confirmation: passwordConfirm,
-          }),
-        }).then((res) => {
-          if (res.ok) {
-            res.json().then((user) => handleNotification());
-          } else {
-            res.json().then((error) => setError(error));
-          }
-        });
+
+  function submitHandler(e) {
+    e.preventDefault();
+    fetch("/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username,
+        email,
+        phone_number,
+        password,
+        password_confirmation: passwordConfirmation,
+      }),
+    }).then((res) => {
+
+      if (res.ok) {
+        res.json().then((user) => 
+        onSignup(user),
+        handleNotification());
+      } else {
+        res.json().then((error) => setError(error));
       }
+    });
+  }
 
-      function endNotification() {
-        setNotification(false);
-      }
-      return (
-      <div className="boddy">
-        <div className="container1">
-          <form>
-            <p>Sweet Living</p>
-            <input type="text" placeholder="Username" required="required" value={username} onChange={e=>setUsername(e.target.value)} /><br />
-            <input type="email" placeholder="Email" id="email"required="required" value={email} onChange={e=>setEmail(e.target.value)}/><br />
-            <input type="number" placeholder="Phone Number" required="required" value={phone} onChange={e=>setPhone(e.target.value)} /><br />
-            <input type="password" placeholder="Password" required="required" value={password} onChange={e=>setPassword(e.target.value)} /><br />
-          
-            <input type="button" value="Sign in" onClick={submitHandler}/><br />
-            <a href="#">Log in?</a>
-          </form>
-          <div className="drops">
-            <div className="drop drop-1"></div>
-            <div className="drop drop-2"></div>
-            <div className="drop drop-3"></div>
-            <div className="drop drop-4"></div>
-            <div className="drop drop-5"></div>
-          </div>
+
+  return (
+    <div className="form-inner">
+      <h1>Sweet Living SignUp</h1>
+      {notification ? (
+        <p className="bg-sky-900 transition-ease-in-out text-white w-full p-3 rounded-md flex flex-row justify-center items-center">
+          signup successfull
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </p>
+      ) : null}
+      <form>
+        <div className="form-group">
+        {error ? <p className="border text-center p-3 text-red-500 outline-none rounded-md w-full mt-2">{error.errors}</p> : null}
+          <input
+            type="text"
+            min="5"
+            name="username"
+            required="required"
+            autoComplete="off"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <span></span>
+          <label>Username</label>
         </div>
-      </div>
-      );
 
+        <div className="form-group">
+          <input
+            type="email"
+            name="email"
+            required="required"
+            autoComplete="off"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <span></span>
+          <label>Email</label>
+        </div>
 
-    }
-    export default Signup;
+        <div className="form-group">
+          <input
+            type="phone"
+            min="10"
+            max="12"
+            name="phone"
+            required="required"
+            autoComplete="off"
+            value={phone_number}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <span></span>
+          <label>Phone</label>
+        </div>
+
+        <div className="form-group">
+          <input
+            type="password"
+            min="8"
+            name="password"
+            required="required"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            autoComplete="current-password"
+          />
+          <span></span>
+          <label>Password</label>
+        </div>
+
+        <div className="form-group">
+          <input
+            type="password"
+            name="password"
+            required="required"
+            id="password"
+            value={passwordConfirmation}
+            onChange={(e) => setPasswordConfirmation(e.target.value)}
+            autoComplete="current-password"
+          />
+          <span></span>
+          <label>Password Confirmation</label>
+        </div>
+      
+        <button
+          className="outline text-sky-400 hover:bg-sky-400 hover:text-white rounded-lg p-2 "
+          onClick={submitHandler}
+          type="button">
+          SIGN IN
+        </button>
+
+        <div className="login_link">
+          Already have an account
+          <NavLink to="/login">Login</NavLink>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+export default Signup;

@@ -8,18 +8,21 @@ function Card({card}) {
 
     return (
         <div className='card-container' >
+            <figure>
             <div className="card shadow s-white rounded text-white">
                 <img className="card-img" src={card.image_url} alt="Card image"/>
-                <div class="card-img-overlay d-flex flex-column">
-                    <div className="mt-auto">
+                <figcaption>
+                <div class="card-img-overlay d-flex flex-column my-text">
                         <p id='overlay-text'><em>KSH.{card.price}/m</em></p>
-                        <p id='overlay-text'><em>{card.houses}</em></p>
+                        <p id='overlay-text'><em>{card.description}</em></p>
+                        <p id='overlay-text'>{card.location}</p>
                         <Link to={`/singleproperty/${card.id}`} >
-                        <button id='view-btn'>View</button>
+                            <span class= 'v-btn'><button></button></span>                        
                         </Link>
-                    </div>
                 </div>
+                </figcaption>
             </div>
+            </figure>
         </div>
     )
 }
