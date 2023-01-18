@@ -75,7 +75,7 @@ const Singleproperty = () => {
   
     return ( 
       
-      
+      <>
 
     <div className="sellerpage-container">
       <div className="image-1">
