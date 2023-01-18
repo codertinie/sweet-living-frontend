@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../LoginSignupStyle/LoginSignup.css";
-function Signup() {
+function Signup({ onSignup }) {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone_number, setPhone] = useState("")
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [notification,setNotification] = useState(false);
@@ -24,7 +24,7 @@ function endNotification(){
 
   function submitHandler(e) {
     e.preventDefault();
-    fetch("", {
+    fetch("/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,13 +32,16 @@ function endNotification(){
       body: JSON.stringify({
         username,
         email,
-        p_number: phone,
+        phone_number,
         password,
         password_confirmation: passwordConfirmation,
       }),
     }).then((res) => {
+
       if (res.ok) {
-        res.json().then((user) => handleNotification());
+        res.json().then((user) => 
+        onSignup(user),
+        handleNotification());
       } else {
         res.json().then((error) => setError(error));
       }
@@ -103,7 +106,7 @@ function endNotification(){
             name="phone"
             required="required"
             autoComplete="off"
-            value={phone}
+            value={phone_number}
             onChange={(e) => setPhone(e.target.value)}
           />
           <span></span>

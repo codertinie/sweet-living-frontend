@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { Outlet } from 'react-router-dom';
 import Card from './Card';
 import './home.css'
 
@@ -15,6 +16,7 @@ function AllHouses() {
 },[])
 
     return (
+       <>
         <div>
             <div className='rentals'>
                 <h2 className='view-title'>House Listings</h2>
@@ -26,6 +28,8 @@ function AllHouses() {
                 </div>
             </div>
         </div>
+        <Outlet/>
+       </>
     )
 }
 
