@@ -6,7 +6,7 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 import Singleproperty from "./components/singleproperty";
 import Navbar from "./components/navbar";
-import Contact from "./components/contact/Form";
+import Contact from "./components/contact/Contact";
 import About from "./components/about/About.js";
 import Nopage from "./components/nopage";
 import AllApartments from "./components/home/AllApartments"
