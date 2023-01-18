@@ -1,23 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../LoginSignupStyle/LoginSignup.css";
 
-function Login() {
+function Login({ onLogin}) {
   const navigate = useNavigate();
   const [error, setError] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [notify, setNotify] = useState(false);
+ 
 
   function notifyUser() {
     setNotify((notify) => !notify);
     setTimeout(endNotification, 1000);
   }
 
+ 
+
   function submitHandler(e) {
     setError(null)
     e.preventDefault();
-    fetch("", {
+    fetch("/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,9 +29,16 @@ function Login() {
     }).then((res) => {
       if (res.ok) {
         res.json().then((user) => {
+            onLogin(user);
             notifyUser();
-          localStorage.setItem("jwt", user.jwt);
-          localStorage.setItem("", `${user.passenger.id}`);
+        //   localStorage.setItem("jwt", user.jwt);
+        //   localStorage.setItem("", `${user.user.id}`);
+
+       
+
+
+
+        
         });
       } else {
         res.json().then((error) => setError(error));
@@ -38,7 +48,7 @@ function Login() {
 
   function endNotification() {
     setNotify((notify) => !notify);
-    navigate("");
+    navigate("/home");
   }
 
   return (
