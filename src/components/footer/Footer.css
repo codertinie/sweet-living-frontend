@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins&display=swap');
-.footer{
+/* .footer{
     font-family:'Tangerine' , cursive;
     color: #fff;
     display: flex;
@@ -7,20 +7,20 @@
     height: 100px;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     /* min-height: calc(10vh - 95px);*/
     /* min-height: 100vh; */
-    flex-direction: column;
-    margin-top: auto;
+    /* flex-direction: column;
+    margin-top: auto; */
     /* position: absolute;
     bottom: 0px; */
-    text-decoration: underline;
+    /* text-decoration: underline;
 }
 h2{
     font-family: 'Tangerine', cursive;
     text-decoration: underline;
     
-}
+} */
 /* h1:hover{
         background-color: rgb(52, 167, 193);
 } */
@@ -28,11 +28,11 @@ h2{
 
 /* p:hover{
     background-color: rgb(21, 105, 157);
-}*/ */
+}*/ 
 /* .hide-Footer{
     display: none;
 } */
-.section1{
+/* .section1{
     font-family: sans-serif;
     color: #fff;
     position: relative;
@@ -44,8 +44,8 @@ h2{
     display: flex !important;
     margin-left: 2px;
     text-decoration: underline;
-}
-.section2 {
+} */
+/* .section2 {
     font-family: sans-serif;
     color: #fff;
     position: relative;
@@ -57,4 +57,7 @@ h2{
     gap: 25px;
     display: flex !important;
     margin-left: 2px;
+} */
+.footer{
+    
 }
