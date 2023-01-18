@@ -1,99 +1,95 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-gap: 5px;
-  flex-wrap: wrap;
-  font-family:'Poppins', sans-serif
+.sellerpage-container {
+  position: relative;
+  max-width: 100%;
 }
 
-.grid-item-1 {
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.grid-item > img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-  border-radius: 10px;
-}
-
-.grid-item-6{
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.grid-item-6 > h3{
-  color: #6F73D2;
-}
-
-.myInput {
-  width: 99%;
-  height: 200px;
-  padding: 12px ;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
+.image-1 {
+  position: absolute;
+  top: 2vh;
+  left: 15vw;
   
 }
 
-.grid-item-7 {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  /* background-color: darkgray; */
-  position: relative;
-  box-shadow: 1px 2px 5px;
-  border-radius: 10px;
+.image-1 img {
+  max-width: 70vw;
+  max-height: 99vh;
 }
 
-.grid-item-7 > h3{
+
+.image-2 {
+    position: absolute;
+    top: 102vh;
+    left: 25vw;
+  
+}
+
+.image-3 {
+  position: absolute;
+  top: 102vh;
+  left: 50vw;
+}
+
+.image-2 img {
+  max-width: 23vw;
+}
+
+.image-3 img{
+ max-width: 23vw;
+}
+
+.image-4 img {
+  max-width: 23vw;
+  
+}
+
+.image-4 {
+  position: absolute;
+  top: 102vh;
+}
+
+.image-5 img {
+  max-width: 23vw;
+}
+
+.image-5 {
+  position: absolute;
+  top: 102vh;
+  left: 75vw;
+}
+
+.description {
+  position: absolute;
+  top: 140vh;
+  width: 60vw;
+}
+
+.seller-info {
+  position: absolute;
+  top: 145vh;
+  left: 75vw;
+  border-style: solid;
+  border-radius: 15px;
+  padding: 20px;
   text-align: center;
-  text-decoration: underline;
+  box-shadow: 10px 10px 10px;
 }
 
-.grid-item-7 > button {
-  font-size: 20px;
+.seller-info button {
+  margin-top: 60px;
+}
+
+.location {
   position: absolute;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 10px;
-  left: 55%;
-  /* top: 70%; */
-  bottom: 5%;
+  top: 180vh;
 }
 
-.grid-item-7 > button:hover {
-  background-color: red;
-  color: aliceblue;
+.location iframe {
+  max-width: 80%;
+  height: 50vh;
 }
 
-.grid-item-7 > h3{
-  color: #6F73D2;
-}
-
-.grid-item-8 {
-  grid-row-start: 4;
-  /* grid-row-end: 5; */
-}
-
-.grid-item-8 > h3{
-  color: #6F73D2;
-}
-
-.grid-item-9 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 4;
-  position: relative;
-}
-
-.grid-item-9 > button {
+.delete-btn {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 40px;
+  top: 230vh;
+  left: 93vw;
 }
-
