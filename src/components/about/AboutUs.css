@@ -28,12 +28,19 @@ h5 {
     /* height: 68vh */
 }
 
-/* span {
+span {
     color: crimson;
     text-align: center;
-} */
+}
 
 .about-img {
+    /* position: relative; */
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    margin: 4px;
+    /* height: 400px; */
     width: 50%;
 }
 
