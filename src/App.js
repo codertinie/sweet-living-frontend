@@ -12,9 +12,23 @@ import Nopage from "./components/nopage";
 import AllApartments from "./components/home/AllApartments"
 import AllHouses from "./components/home/AllHouses"
 import SellerPage from "./components/SellerPage/sellerpage";
+import { useState, useEffect } from "react";
+
+
 
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    fetch("/me").then((res) => {
+        if (res.ok) {
+            res.json().then((user) => setUser(user));
+        }
+    });
+}, []);
+
+
   return (
   <>
   
@@ -25,8 +39,8 @@ function App() {
             {/* <Route index element={<Footer/>} /> */}
           </Route>
           <Route path="about" element={<About />} />
-          <Route path="login" element={<Login />} />
-          <Route path="signup" element={<Signup />} />
+          <Route path="login" element={<Login onLogin={setUser}/>} />
+          <Route path="signup" element={<Signup onSignup={setUser} />} />
           <Route path="contact" element={<Contact />} />
           <Route path="/apartments" element={<AllApartments />} />
           <Route path="/houses" element={<AllHouses />} />
