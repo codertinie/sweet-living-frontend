@@ -6,7 +6,7 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 import Singleproperty from "./components/singleproperty";
 import Navbar from "./components/navbar";
-import Contact from "./components/contact/Form";
+import Contact from "./components/contact/Contact";
 import About from "./components/about/About.js";
 import Nopage from "./components/nopage";
 import AllApartments from "./components/home/AllApartments"
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="home" element={<Home /> } >
-            {/* <Route index element={<Footer/>} /> */}
+            <Route index element={<Footer/>} />
           </Route>
           <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
@@ -35,7 +35,7 @@ function App() {
           <Route path="*" element={<Nopage />} />
             
         </Routes>
-        {/* <Footer/>   */}
+
       </>
   );
 }
