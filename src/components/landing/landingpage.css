@@ -1,19 +1,99 @@
 .landing_section{
-    position: relative;
+    /* position: relative; */
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 video{
+    width: 100%;
+    height: 100vh;
     position: absolute;
     top: 50%;left:50%;
     min-width:100%; max-width:100%;
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
-    opacity: 70%;
+    opacity: 85%;
     object-fit: fill;
     z-index: -2;
 }
 
-.overlay{
+
+.top-land {
+    width: 100%;
+    font-weight: 900;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top-land h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 4.5rem;
+}
+
+.top-land h1 span {
+    color: darkorange;
+}
+
+.top-land h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.middle-land {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 80px;
+    top: 50vh;
+    text-align: right;
+}
+
+.houses-btn {
+    padding: 15px 0;
+    margin: 0 10px;
+    width: 200px;
+    border: none;
+    background-color: darkorange;
+    border-radius: 25px;
+    color: black;
+    border: 2px solid darkorange;
+    border-radius: 25px;
+    transition: background 0.5s;
+    font-weight: 900;
+    font-size: x-large;
+    position: relative;
+    top: 5vh;
+}
+
+.houses-btn:hover {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.bottom-land {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 0 4%;
+    font-weight: 900;
+    font-size: 2rem;
+    position: relative;
+    top: 5vh;
+}
+
+
+
+/* .overlay{
     position: absolute;
     top:0; left:0;
     z-index: 1;
@@ -27,13 +107,10 @@ video{
     align-items: center;
     justify-content: center;
     transition: all 0.8s;
-    font-weight: 900;
-    font-size: 80px;
     position: absolute;
     top: 50px;
     left: 380px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .landingpage_text1:hover{
@@ -41,9 +118,9 @@ video{
     font-size: 99px;
 }
 
-/* .landingpage_text1 h1 span{
+.landingpage_text1 h1 span{
     color: #6f73d2;
-} */
+}
 
 #hd1{
     color: #6f73d2;
@@ -73,15 +150,12 @@ video{
     text-align: center;
     color: white;
     border: none;
-    border-radius: 25px;
     background-color: #6f73d2;
-    border: 2px solid #6f73d2;
-    transition: background 0.5s;
 }
 
 .landingpage_buttons{
-    width: 50%;
-    height: auto;
+    width: 100%;
+    height: fit-content;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -105,12 +179,12 @@ video{
     left: 25%;
     font-size: x-large;
     color: white;
-}
+} */
 
 .scroll_down_image_container{
     width: 100%;
     height: 30vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -141,3 +215,25 @@ video{
         transform: translateY(10px);
     }
 }
+
+/* @media screen  and (max-width: 1212px) {
+    .landing_section {
+        height: 850px;
+    }
+}
+
+@media screen and (max-width: 1212px) {
+    .landingpage_text1{
+        height: 850px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    .landing_section {
+        height: 1390px;
+    }
+    .landingpage_buttons{
+        min-width: 250px;
+    }
+} */

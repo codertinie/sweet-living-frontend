@@ -8,13 +8,13 @@ body{
     background-color: #fafafa;
 }
 .view-page {
-    height: 100%;
+    margin: 10px 20px;
     width: 100%;
-    font-family: Lato,Helvetica,Arial,sans-serif;    
+    margin-top: 80px;
 }
 .home-title{
     margin-left: 40px;
-    margin-top: 15px;
+    margin-top: 20px;
     color: var(--primary-color);
     font-family: inherit;
     font-size: 35px;
@@ -25,9 +25,7 @@ body{
     text-align: center;
     font-size: 40px;
     font-weight: 900;
-    margin: 20px;
-    text-decoration: none;
-    font-family: inherit;
+    margin-top: 120px;
 }
 .card-container{
     justify-content: space-between;
@@ -41,7 +39,7 @@ body{
     cursor: pointer;
     align-items: center;
     margin-bottom: 30px;
-    margin-left: 0px;
+    margin-left: 5px;
     text-align: left;
 } 
 .card:hover{
@@ -61,6 +59,7 @@ body{
     transition: opacity 0.35s;
     border-style: solid ;
     border-color:black;
+
 }
 .card-img-overlay{
     position: absolute;

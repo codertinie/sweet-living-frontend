@@ -12,8 +12,8 @@ import Nopage from "./components/nopage";
 import AllApartments from "./components/home/AllApartments"
 import AllHouses from "./components/home/AllHouses"
 import SellerPage from "./components/SellerPage/SellerPage";
+import SellerSignup from "./components/sellersignup/SellerSignup";
 import { useState, useEffect } from "react";
-
 
 
 
@@ -32,10 +32,10 @@ function App() {
   return (
   <>
   
-      <Navbar />
+      <Navbar user={user} setUser={setUser}/>
         <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="home" element={<Home /> } >
+          <Route path="/" element={<Landing user={user}/>} />
+          <Route path="home" element={<Home user={user}/> } >
             <Route index element={<Footer/>} />
           </Route>
           <Route path="about" element={<About />} />
@@ -47,7 +47,8 @@ function App() {
           <Route path="singleproperty/:id" element={<Singleproperty />} />
           <Route path="/seller" element={<SellerPage />}/>
           <Route path="*" element={<Nopage />} />
-            
+          <Route path="/sellersignup" element={<SellerSignup />}/>
+
         </Routes>
 
       </>

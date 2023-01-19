@@ -102,7 +102,8 @@ function Login({ onLogin}) {
           <span></span>
           <label>Password</label>
         </div>
-        <button className="outline text-sky-600 hover:bg-sky-600 hover:text-white text-2xl px-5 place-self-center rounded-lg h-10" type="submit">Login</button>
+        <button className="outline
+         text-sky-600 hover:bg-sky-600 hover:text-white text-2xl px-5 place-self-center rounded-lg h-10" type="submit">Login</button>
 
         <div className="signup_link">
           Not a member?

@@ -6,7 +6,7 @@ function Signup({ onSignup }) {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
-  const [phone_number, setPhone] = useState("")
+  // const [phone_number, setPhone] = useState("")
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [notification,setNotification] = useState(false);
@@ -32,7 +32,6 @@ function endNotification(){
       body: JSON.stringify({
         username,
         email,
-        phone_number,
         password,
         password_confirmation: passwordConfirmation,
       }),
@@ -98,7 +97,7 @@ function endNotification(){
           <label>Email</label>
         </div>
 
-        <div className="form-group">
+        {/* <div className="form-group">
           <input
             type="phone"
             min="10"
@@ -111,7 +110,7 @@ function endNotification(){
           />
           <span></span>
           <label>Phone</label>
-        </div>
+        </div> */}
 
         <div className="form-group">
           <input
@@ -148,10 +147,15 @@ function endNotification(){
           type="button">
           Sign Up
         </button>
+        
 
         <div className="login_link">
-          Already have an account
+          Already have an account?
           <NavLink to="/login">Login</NavLink>
+          <br></br>
+          <br></br>
+          Are you a property agent?
+          <NavLink to="/sellersignup">Sign Up</NavLink>
         </div>
       </form>
     </div>
