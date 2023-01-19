@@ -52,6 +52,8 @@ export const SellerPage = () => {
       <h2>Seller Page</h2>
       <form onSubmit={handleSubmit}>
         <div class="register-form">
+          <label className="label" htmlFor="house_features">House Features</label>
+          <input className="same_size"
           <label htmlFor="house_features">House Features</label>
           <input
             value={formData.house_features}
@@ -60,6 +62,11 @@ export const SellerPage = () => {
             id="house_features"
             placeholder="Enter house features"
           />
+          
+          <div className="display-cont">
+            <div className="ct1">
+              <div>
+          <label className="label" htmlFor="url1">Image url 1</label>
 
           <label htmlFor="url1">Image url 1</label>
           <input
@@ -69,6 +76,9 @@ export const SellerPage = () => {
             id="url1"
             placeholder="Enter image url 1"
           />
+          </div>
+          <div >
+          <label className="label" htmlFor="url2">Image url 2</label>
 
           <label htmlFor="url2">Image url 2</label>
           <input
@@ -78,6 +88,12 @@ export const SellerPage = () => {
              id="url2"
              placeholder="Enter image url 2"
           />
+          </div>
+          </div>
+
+          <div className="ct2">
+            <div>
+          <label className="label" htmlFor="url3">Image url 3</label>
 
           <label htmlFor="url3">Image url 3</label>
           <input
@@ -87,6 +103,9 @@ export const SellerPage = () => {
             id="url3"
             placeholder="Enter image url 3"
           />
+          </div>
+          <div>
+          <label className="label" htmlFor="url4">Image url 4</label>
 
           <label htmlFor="url4">Image url 4</label>
           <input
@@ -96,6 +115,13 @@ export const SellerPage = () => {
           id="url4"
           placeholder="Enter image url 4"
           />
+          </div>
+          </div>
+
+          <div className="ct3">
+            <div>
+          <label className="label" htmlFor="url5">Image url 5</label>
+          <input 
 
           <label htmlFor="url5">Image url 5</label>
           <input
@@ -105,6 +131,12 @@ export const SellerPage = () => {
             id="url5"
             placeholder="Enter image url 5"
           />
+          </div>
+          </div>
+
+          <div className="ct4">
+            <div>
+          <label className="label" htmlFor="location">Location</label>
 
           <label htmlFor="location">Location</label>
           <input
@@ -114,6 +146,10 @@ export const SellerPage = () => {
             id="location"
             placeholder="Enter location"
           />
+          </div>
+          <div className="ct6">
+          <label className="label" htmlFor="number_of_rooms">Number of Rooms</label>
+          <input 
 
           <label htmlFor="number_of_rooms">Number of Rooms</label>
           <input
@@ -123,6 +159,12 @@ export const SellerPage = () => {
              id="number_of_rooms"
              placeholder="Enter number of rooms"
           />
+          </div>
+          </div>
+
+          <div className="ct5">
+            <div>
+          <label className="label" htmlFor="price">Price</label>
 
           <label htmlFor="price">price</label>
           <input
@@ -132,6 +174,9 @@ export const SellerPage = () => {
              id="price"
              placeholder="Enter price"
           />
+          </div>
+          <div>
+          <label className="label" htmlFor="category">Category</label>
 
           <label htmlFor="category">Category</label>
           <input
@@ -141,6 +186,26 @@ export const SellerPage = () => {
            id="category"
            placeholder="Enter category"
           />
+          </div>
+          </div>
+          </div>
+
+          
+          
+          <label className="label" htmlFor="description">Description</label>
+          <textarea            
+          className="texta1" 
+          rows="10"
+          value={formData.description}
+          name="Description"
+          onChange={handleChange}
+          id="description"
+          placeholder="Enter description"
+          required
+          >
+          </textarea>
+          <button className="submit-btn" type="submit">Submit</button>
+        </div>
 
           <label htmlFor="description">Description</label>
           <input

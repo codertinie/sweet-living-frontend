@@ -86,7 +86,8 @@
 .vision span{
     text-align: center;
     margin-left: 10rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 900;
 
 }
 .aim{
@@ -101,9 +102,11 @@
     width: 30%;
     margin-right: 70px;
     margin-top: 0px;
+    
 }
 .aim span{
     text-align: center;
     margin-left: 10rem;
-    font-size: 1.8rem
+    font-size: 2rem;
+    font-weight: 900;
 }
