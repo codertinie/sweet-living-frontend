@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../LoginSignupStyle/LoginSignup.css";
-function Signup({ onSignup }) {
+
+
+function SellerSignup({ onSignup }) {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
-  // const [phone_number, setPhone] = useState("")
+  const [phone_number, setPhone] = useState("")
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [notification,setNotification] = useState(false);
@@ -24,7 +26,7 @@ function endNotification(){
 
   function submitHandler(e) {
     e.preventDefault();
-    fetch("/signup", {
+    fetch("/sellersignup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,6 +34,7 @@ function endNotification(){
       body: JSON.stringify({
         username,
         email,
+        phone_number,
         password,
         password_confirmation: passwordConfirmation,
       }),
@@ -50,7 +53,7 @@ function endNotification(){
 
   return (
     <div className="form-inner">
-      <h1>Sweet Living SignUp</h1>
+      <h1>Seller SignUp</h1>
       {notification ? (
         <p className="bg-sky-900 transition-ease-in-out text-white w-full p-3 rounded-md flex flex-row justify-center items-center">
           signup successfull
@@ -97,7 +100,7 @@ function endNotification(){
           <label>Email</label>
         </div>
 
-        {/* <div className="form-group">
+        <div className="form-group">
           <input
             type="phone"
             min="10"
@@ -110,7 +113,7 @@ function endNotification(){
           />
           <span></span>
           <label>Phone</label>
-        </div> */}
+        </div>
 
         <div className="form-group">
           <input
@@ -147,19 +150,14 @@ function endNotification(){
           type="button">
           Sign Up
         </button>
-        
 
         <div className="login_link">
           Already have an account?
           <NavLink to="/login">Login</NavLink>
-          <br></br>
-          <br></br>
-          Are you a property agent?
-          <NavLink to="/sellersignup">Sign Up</NavLink>
         </div>
       </form>
     </div>
   );
 }
 
-export default Signup;
+export default SellerSignup;

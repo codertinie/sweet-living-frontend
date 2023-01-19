@@ -12,6 +12,7 @@ import Nopage from "./components/nopage";
 import AllApartments from "./components/home/AllApartments"
 import AllHouses from "./components/home/AllHouses"
 import SellerPage from "./components/SellerPage/SellerPage";
+import SellerSignup from "./components/sellersignup/SellerSignup";
 import { useState, useEffect } from "react";
 
 
@@ -46,7 +47,8 @@ function App() {
           <Route path="singleproperty/:id" element={<Singleproperty />} />
           <Route path="/seller" element={<SellerPage />}/>
           <Route path="*" element={<Nopage />} />
-            
+          <Route path="/sellersignup" element={<SellerSignup />}/>
+
         </Routes>
 
       </>
