@@ -12,23 +12,26 @@
     /* min-height: 100vh; */
     flex-direction: column;
     margin-top: auto;
-    position: absolute;
-    bottom: 0px;
+    /* position: absolute;
+    bottom: 0px; */
     text-decoration: underline;
 }
-/* h2{
+h2{
     font-family: 'Tangerine', cursive;
     text-decoration: underline;
     
-} */
-h1:hover{
+}
+/* h1:hover{
         background-color: rgb(52, 167, 193);
-}
+} */
 
 
-p:hover{
+/* p:hover{
     background-color: rgb(21, 105, 157);
-}
+}*/ */
+/* .hide-Footer{
+    display: none;
+} */
 .section1{
     font-family: sans-serif;
     color: #fff;

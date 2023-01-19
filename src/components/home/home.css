@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300;400&family=Poppins:ital,wght@0,400;1,300&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 
 :root{
-    --primary-color:#fafafa;
-    --secondary-color:#6F73D2;
+    --primary-color:#006e90;
+    --secondary-color: #f18f01;
 }
 body{
     background-color: #fafafa;
+    position: relative;
+   
 }
 .view-page {
     margin: 10px 60px;
@@ -13,23 +16,23 @@ body{
     margin-top: 80px;
 }
 .home-title{
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 15px;
-    color: var(--secondary-color);
-    font-family: 'Poppins', sans-serif; 
-    font-size: 28px;
+    color: var(--primary-color);
+    font-family: inherit;
+    font-size: 35px;
 }
 .view-title{
     color: var(--secondary-color);
-    font-family: 'Poppins', sans-serif; 
+    font-family: inherit;    
     text-align: center;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 900;
     margin-top: 80px;
 }
 .card-container{
     justify-content: space-between;
-    margin-left: 10px;
+    margin-left: 40px;
     display: flex;
 }
 .card{
@@ -39,56 +42,111 @@ body{
     cursor: pointer;
     align-items: center;
     margin-bottom: 30px;
-    margin-left: 10px;
+    margin-left: 0px;
+    text-align: left;
 } 
 .card:hover{
     transform:scale(1.1);
     z-index:2;
     transition: all 0.3s ease-in-out; 
 }
-
 .card img{
     overflow: content-box; 
     object-fit: cover;  
     width: 100%;
-    height: 28rem;
+    height: 44rem;
+    width: 34rem;
     margin: auto;
     background: transparent;
+    opacity: 1;
+    transition: opacity 0.35s;
+    border-style: solid ;
+    border-color:black;
 }
-#view-btn {
-    width: 100px;
+.card-img-overlay{
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: auto;
+    height: 100%;
+    content: '';
+    opacity: 1;
+    background-color: rgba(0,0,0, 0.5);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.card-img-overlay p{
+  position: relative;
+  top: 25rem;
+}
+.card:hover .card-img-overlay {
+opacity: 1;
+}
+.v-btn{
     position: relative;
-    bottom: 0px;
-    background-color: #6F73D2;
-    color: #fafafa;
-    font-weight: 800;
-    border-radius: 10px;
-    padding: 8px;
-    font-size: x-large;
-} 
-#view-btn:hover{
-    background-color: red;
-    color: #fafafa;
-    cursor: pointer;
-    font-weight: 800;
-}
-#overlay-text{
-    font-size: 1.8rem;
-    font-weight: 900;
-    line-height: 1.5rem;
-}
+    top: 24rem;
+    float: right;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+  }
+  .v-btn{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .v-btn:before,
+  .v-btn:after{
+    position: absolute;
+    content: "View";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .v-btn:before{
+    color: #fff;
+    background: #f18f01;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  .v-btn:after{
+    color: #ffff;
+    background-color:transparent ;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  .v-btn:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
 .rental-card{
     display:grid; 
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
 }
 
 #more{
     text-align: right;
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: 900;
     position: relative;
     bottom: 20px;
     left: 20px;
+    color: #f18f01;
 }
