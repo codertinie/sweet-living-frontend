@@ -61,7 +61,7 @@
 
 .description {
   position: absolute;
-  top: 195vh;
+  top: 185vh;
   width: 55vw;
   font-size: larger;
   font-family: Lato,Helvetica,Arial,sans-serif;
@@ -101,7 +101,7 @@
 
 .location {
   position: absolute;
-  top:220vh;
+  top:210vh;
 }
 
 .location iframe {
