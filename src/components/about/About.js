@@ -16,7 +16,7 @@ function About() {
       </div>
       <div className="content">
         <div className="vision">
-        <img src="https://i.pinimg.com/736x/8e/96/5e/8e965eccc96a868ddfd0bf77b365f168.jpg" alt=""/>
+        <img src="https://res.cloudinary.com/dbonqtd6j/image/upload/v1674036901/interior-gbf0e7e6a0_1920_qkk54v.jpg" alt=""/>
         <p>
           <span>Our Vision</span> <br /> We offer affodable houses for sale,
           rent and also allow property owners to showcase, sell or rent their
