@@ -3,12 +3,12 @@ import "./seller.css";
 
 export const SellerPage = () => {
     const[formData, setValue] =useState({
-        house_features:'',
-        url1:'',
-        url2:'',
-        url3:'',
-        url4:'',
-        url5:'',
+        houses:'',
+        image_url:'',
+        image_url2:'',
+        image_url3:'',
+        image_url4:'',
+        image_url5:'',
         location:'',
         number_of_rooms:'',
         price:'',
@@ -17,7 +17,7 @@ export const SellerPage = () => {
     })
     function handleSubmit(e){
         e.preventDefault();
-        fetch('http://localhost:3000/properties',{
+        fetch('/properties',{
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -52,57 +52,57 @@ export const SellerPage = () => {
       <h2>Seller Page</h2>
       <form onSubmit={handleSubmit}>
         <div class="register-form">
-          <label htmlFor="house_features">House Features</label>
+          <label htmlFor="houses">House Features</label>
           <input
-            value={formData.house_features}
+            value={formData.houses}
             name="House_features"
             onChange={handleChange}
-            id="house_features"
+            id="houses"
             placeholder="Enter house features"
           />
 
           <label htmlFor="url1">Image url 1</label>
           <input
-            value={formData.url1}
+            value={formData.image_url}
             name="Image_url_1"
             onChange={handleChange}
-            id="url1"
+            id="image_url"
             placeholder="Enter image url 1"
           />
 
           <label htmlFor="url2">Image url 2</label>
           <input
-             value={formData.url2}
+             value={formData.image_url2}
              name="Image_url_2"
              onChange={handleChange}
-             id="url2"
+             id="image_url2"
              placeholder="Enter image url 2"
           />
 
           <label htmlFor="url3">Image url 3</label>
           <input
-            value={formData.url3}
+            value={formData.image_url3}
             name="Image_url_3"
             onChange={handleChange}
-            id="url3"
+            id="image_url3"
             placeholder="Enter image url 3"
           />
 
           <label htmlFor="url4">Image url 4</label>
           <input
-          value={formData.url4}
+          value={formData.image_url4}
           name="Image_url_4"
           onChange={handleChange}
-          id="url4"
+          id="image_url4"
           placeholder="Enter image url 4"
           />
 
           <label htmlFor="url5">Image url 5</label>
           <input
-            value={formData.url5}
+            value={formData.image_url5}
             name="Image_url_5"
             onChange={handleChange}
-            id="url5"
+            id="image_url5"
             placeholder="Enter image url 5"
           />
 
