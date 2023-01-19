@@ -2,36 +2,68 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import img from "../../logo.jpeg";
+import { FaHome } from 'react-icons/fa';
+import { FaInfoCircle } from 'react-icons/fa'
+import { FaPhone } from 'react-icons/fa';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesome } from "react-icons/fa";
 
 function Navbar() {
+
+  const menu = () => {
+    const links = document.querySelector('.middle-nav')
+    const menu = document.querySelector('.menu')
+    links.classList.toggle('active')
+    menu.classList.toggle('clicked')
+  }
+
+  const aLink = () => {
+    const links = document.querySelector('.middle-nav')
+    const menu = document.querySelector('.menu')
+    links.classList.remove('active')
+    menu.classList.remove('clicked')
+  }
+
   return (
     <nav>
+      <div className="left-nav">
       <div>
         <NavLink to="/" >
-            <img src={img} alt="house" />
+            <img src={img} alt="house" id="logo" />
         </NavLink>
       </div>
       <div>
-        <NavLink to="/" className="navlink" id="header">
+        <NavLink to="/" className="navlink" id="header" onClick={aLink}>
           SWEET - LIVING
         </NavLink>
       </div>
+      </div>
 
+      <div className="middle-nav">
       <div className="container1-nav">
-        <NavLink to="/home" className="navlink">
-          Home
+        <NavLink to="/home" className="navlink" onClick={aLink}>
+          <FaHome size={40} color="black"/>
         </NavLink>
-        <NavLink to="/about" className="navlink">
-          About
+        <NavLink to="/about" className="navlink" onClick={aLink}>
+          <FaInfoCircle size={40} color="black"/>
         </NavLink>
-        <NavLink to="/contact" className="navlink">
-          Contact us
+        <NavLink to="/contact" className="navlink" onClick={aLink}>
+          <FaPhone size={40} color="black"/>
         </NavLink>
       </div>
-      <div>
+      </div>
+
+
+      <div className="right-nav">
         <NavLink to="/login" className="navlink">
           <button id="navButton">Signin</button>
         </NavLink>
+
+        <div className="menu" onClick={menu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
       </div>
     </nav>
   );
