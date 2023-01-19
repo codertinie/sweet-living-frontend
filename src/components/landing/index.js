@@ -29,7 +29,7 @@ function Landing(){
     }
 
     function handleSellHouse(){
-        navigate("/sellerpage")
+        navigate("/seller")
     }
     return(
         <>
