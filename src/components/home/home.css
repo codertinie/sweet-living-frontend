@@ -10,6 +10,7 @@ body{
 .view-page {
     margin: 10px 60px;
     width: 90%;
+    margin-top: 80px;
 }
 .home-title{
     margin-left: 20px;
@@ -24,7 +25,7 @@ body{
     text-align: center;
     font-size: 28px;
     font-weight: 900;
-    margin: 20px;
+    margin-top: 80px;
 }
 .card-container{
     justify-content: space-between;

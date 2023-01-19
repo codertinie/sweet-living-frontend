@@ -13,7 +13,6 @@ import AllApartments from "./components/home/AllApartments"
 import AllHouses from "./components/home/AllHouses"
 import SellerPage from "./components/sellerpage";
 
-
 function App() {
   return (
   <>
