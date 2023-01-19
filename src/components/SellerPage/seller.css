@@ -19,24 +19,25 @@
 }
 
 .register-form {
-    text-align: center;
-    /* text-decoration: underline; */
+    text-align: left;
     display: flex;
     flex-direction: column;
     background-color: #006e90;
     padding: 30px 0;
     border-radius: 20px ;
     height: 70rem;
-
+    /* border: dashed 3px black; */
+    opacity: 0.9;
 }
 
+.register-form:hover{
+    opacity: 1;
+}
 .auth-form-container
  {
     display: flex;
     flex-direction: column;
     width: 60rem; 
-    /* margin: 0 auto; */
-    /* padding: 20px; */
     position: relative;
     left: 27rem;
 
@@ -56,8 +57,6 @@
         border: 1px solid white;
         border-radius: 10px;
         margin: 0.5rem;
-
-
     }
 } 
 
@@ -78,12 +77,14 @@
     width: 70%;
     /* margin-left: 110px; */
 }
+.register-form input:focus{
+    outline: none;
+    background-color: #faf2e8;
+}
 .register-form input::placeholder{
     font-style: italic;
 }
 .submit-btn {
-
-
     border: none;
     font-size: 23px;
     background-color: #F18F01;
@@ -93,9 +94,10 @@
     color: #fff;
     width: 40%;
     margin-left: 15rem;
-    margin-top: 10px;
 } 
-
+.submit-btn:hover{
+    background-color: #f8aa34;
+}
 .link-btn {
     background: none;
     color: white;
@@ -139,45 +141,51 @@
 .ct1 {
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    /* position: relative;
-    right: 160px; */
+    width: 90%;
+    /* border: 2px solid black; */
+    margin:auto;
+    position: relative;
+    left: 15px;
 }
 
 .ct2 {
     display: flex;
-    /* justify-content: space-between; */
-    /* position: relative;
-    right: 160px; */
+    /* border: 2px solid black; */
+    margin:auto;
+    width: 90%;
+    position: relative;
+    left: 15px;
 }
 
 .ct3 {
-    display: flex;
-    position: relative;
-    right: 10px;
     width: 30rem;
+    /* border: 2px solid black; */
+    position: relative;
+    left: 60px;
 }
 
 .ct4 {
     display: flex;
-    width: 65rem;
-    /* position: relative;
-    right: 160px; */
+    width: 90%;
+    /* border: 2px solid black; */
+    margin: auto;
+    position: relative;
+    left: 15px;
 }
 
 .ct5 {
     display: flex;
-    width: 65rem;
-    
-} 
-.ct6{
-    width: 50%;
+    width: 90%;
+    /* border: 2px solid black; */
+    margin:auto;
     position: relative;
-    right: 3.4rem;
-}
-.ct5  #price{
-    width: 22.2rem;
-}
+    left: 15px;
+} 
+/* .ct6{
+       border: 2px solid black;
+
+} */
+
 .same_size{
     position: relative;
     left: 4rem;
@@ -187,5 +195,73 @@
     width: 50rem;
     position: relative;
     left: 4rem;
-    /* padding: 10rem; */
+    margin-bottom: 20px;
+}
+.texta1:focus{
+    outline: none;
+    background-color: #faf2e8;
+}
+.texta1::placeholder{
+    font-style: italic;
+}
+[for=houses]{
+    position: relative;
+    right: 3rem;
+}
+
+/* .display-cont{
+    border:2px solid black
+}
+
+#f{
+    border: black 2px dashed;
+    
+} */
+
+#location{
+    width: 85%;
+}
+#number_of_rooms{
+    width: 59%;
+    margin-left: 4.6rem;
+    position: relative;
+    bottom: 3px;
+}
+
+#image_url5{
+    width:60%;
+}
+#price{
+    width: 80%;
+    
+}
+
+/* .ct7{
+    border: 2px solid;
+} */
+
+#category{
+    width: 64%;
+    margin-left: 2.6rem;
+}
+
+[for=description]{
+    position: relative;
+    right: 3rem;
+}
+
+#image_url4{
+width: 70%;
+}
+[for=image_url],[for=image_url2],[for=image_url2],[for=image_url3],[for=image_url4],[for=image_url5]{
+   position: relative;
+   right: 2.2rem;
+}
+[for=location]{
+    position: relative;
+    right: 1.4rem;
+}
+[for=category]{
+    position: relative;
+    left: 1.2rem;
 }
