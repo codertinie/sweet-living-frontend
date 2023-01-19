@@ -1,4 +1,4 @@
-.seller {
+/* .seller {
     min-height: 100vh;
     background-color: #F18F01;
     position: relative;
@@ -30,10 +30,13 @@
 .register-form {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-
+    width: 50%; */
+    /* margin: 0 auto; */
+    /* padding: 20px;
+    position: relative;
+    left: 20rem; */
+    /* right: 50% auto ; */
+/* 
 }
 
 @media screen and (min-width: 800px) {
@@ -45,9 +48,9 @@
 
 
     }
-}
+} */
 
-label {
+/* label {
     text-align: left;
     padding: 0.25rem 0;
 }
@@ -71,9 +74,9 @@ button {
     color: #fff;
     max-width: 30%;
 
-}
+} */
 
-.link-btn {
+/* .link-btn {
     background: none;
     color: white;
     text-decoration: underline;
@@ -146,7 +149,7 @@ button {
     justify-content: between-around;
     position: relative;
     right: 160px;
-}
+} */
 
 /* .const_6 {
 
