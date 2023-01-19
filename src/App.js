@@ -47,7 +47,7 @@ function App() {
           <Route path="singleproperty/:id" element={<Singleproperty />} />
           <Route path="/seller" element={<SellerPage />}/>
           <Route path="*" element={<Nopage />} />
-          <Route path="/sellersignup" element={<SellerSignup />}/>
+          <Route path="/sellersignup" element={<SellerSignup onSignup={setUser}/>}/>
 
         </Routes>
 
