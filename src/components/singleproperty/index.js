@@ -35,6 +35,8 @@ const Singleproperty = () => {
   let image5 = property.map((item) => item.image_url5);
   let description = property.map((item) => item.description);
   let seller = property.map((item) => item.seller);
+  let name = property.map((item) => item.name);
+  let price = property.map((item) => item.price);
 
   console.log(property);
   console.log(description);
@@ -68,61 +70,100 @@ const Singleproperty = () => {
       });
   }
 
-  //   const textArea = document.querySelector('.myInput');
-  // textArea.style.height = 'auto';
-  // textArea.style.height = textArea.scrollHeight + 'px';
+//   const textArea = document.querySelector('.myInput');
+// textArea.style.height = 'auto';
+// textArea.style.height = textArea.scrollHeight + 'px';
 
-  return (
-   <>
-    <div className="grid-container">
-      <div className="grid-item grid-item-1">
+function handleBooking() {
+  alert("Booking successful!, check your email for more details");
+  navigate("/home")
+}
+  
+    return ( 
+      
+      <>
+
+    <div className="sellerpage-container">
+      <div className="image-1">
         <img src={image} alt="" />
         {/* <h2>10.2million</h2> */}
       </div>
-      <div className="grid-item grid-item-2">
+      <div className="image-2">
         <img src={image2} alt="" />
       </div>
-      <div className="grid-item grid-item-3">
+      <div className="image-3">
         <img src={image3} alt="" />
       </div>
-      <div className="grid-item grid-item-4">
-        <img src={image4} alt="" />
+      <div className="image-4">
+      <img src={image4} alt="" />
       </div>
-      <div className="grid-item grid-item-5">
-        <img src={image5} alt="" />
+      <div className="image-5">
+      <img src={image5} alt="" />
       </div>
+      
+        <br />
+        {mode === "display" ? (
+  <div className="description">
+    <h3>Description</h3>
+    {des}
+  <button className="btn btn-edit" onClick={handleButtonClick}>
+        <FontAwesomeIcon icon={faEdit} />
+      </button>
+  </div>
+) : (
+  <div className="description">
+    <h3>Description</h3>
+  <textarea className="myInput" type="text" value={des} onChange={(e) => setDes(e.target.value)}/>
+    <button onClick={saveDescription}>Save</button>
+  </div>
+)}
 
-      <br />
-      {mode === "display" ? (
-        <div className="grid-item grid-item-6">
-          <h3>Description</h3>
-          {des}
-          <button className="btn btn-edit" onClick={handleButtonClick}>
-            <FontAwesomeIcon icon={faEdit} />
-          </button>
+  <div className="name">
+  {name}
+  </div>
+
+  <div className="price">
+    {price}
+  </div>
+
+      <div className="seller-info">
+      <p> 
+        Please leave your details and our property advisor will get in touch with you.
+      </p>
+      <label>Your Name*</label>
+      <div className="Name">
+        <input 
+        type="text" 
+        name="name"
+        required="required"
+        />
         </div>
-      ) : (
-        <div className="grid-item grid-item-6">
-          <h3>Description</h3>
-          <textarea
-            className="myInput"
-            type="text"
-            value={des}
-            onChange={(e) => setDes(e.target.value)}
+          <label>Phone Number</label>
+          <div className="phone">
+          <input type="text"
+          required="required"
           />
-          <button onClick={saveDescription}>Save</button>
-        </div>
-      )}
-
-      <div className="grid-item grid-item-7">
-        <h3>Seller info</h3>
+          </div>
+          
+          <label > Email </label>
+          <div className="email">
+            
+            <input type="email" 
+              name="email"
+              required="required"
+            />
+          </div>
+     
+      
+   
+        {/* <h3>Seller info</h3>
         <li>Name : {seller.map((item) => item.username)}</li>
         <li>Email : {seller.map((item) => item.email)}</li>
-        <li>Phone Number</li>
-        <button>BOOK NOW</button>
+        <li>Phone Number</li> */}
+        <button onClick={handleBooking}>BOOK NOW</button>
       </div>
-
-      <div className="grid-item grid-item-8">
+      
+      <div className="location">
         <h3>Location</h3>
 
         <iframe
@@ -134,9 +175,9 @@ const Singleproperty = () => {
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-
-      <div className="grid-item grid-item-9">
-        <button className="btn btn-delete" onClick={handleClick}>
+       
+         <div className="delete-btn">
+         <button className="btn btn-delete" onClick={handleClick}>
           <FontAwesomeIcon icon={faTrash} size="2x" />
         </button>
       </div>
