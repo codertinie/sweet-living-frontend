@@ -22,15 +22,17 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    background-color: #006e90;
+     /* background-color: #89bce9; */
     padding: 30px 0;
     border-radius: 20px ;
     height: 70rem;
-    /* border: dashed 3px black; */
-    opacity: 0.9;
+    border: solid 3px black;
+    /* opacity: 0.9; */
+    box-shadow: 5px 5px 5px  #898585;
 }
 
 .register-form:hover{
+    box-shadow: 10px 10px 5px  #bdbcbc;
     opacity: 1;
 }
 .auth-form-container
@@ -44,7 +46,7 @@
 }
 .auth-form-container h1{
     text-align: center;
-    color: #006e90;
+    color: #F18F01;
     margin-bottom: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
@@ -64,7 +66,7 @@
 .label {
     text-align: left;
     padding: 0.25rem 0;
-    color: #fff;
+    color:black;
     font-size: 1.8rem;
     margin-left: 110px;
     text-decoration: none;
@@ -73,7 +75,7 @@
 .register-form input {
     margin: 0.5rem 0;
     padding: 1rem;
-    border: none;
+    /* border: none; */
     border-radius: 10px;
     width: 70%;
     /* margin-left: 110px; */
@@ -94,7 +96,7 @@
     cursor: pointer;
     color: #fff;
     width: 40%;
-    margin-left: 15rem;
+    margin-left: 17rem;
 } 
 .submit-btn:hover{
     background-color: #f8aa34;
