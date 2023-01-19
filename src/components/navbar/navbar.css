@@ -38,6 +38,8 @@ nav{
   gap: 15px;
 }
 
+
+
 .left-nav img {
     width: 50px;
     height: 40px;
@@ -50,7 +52,7 @@ nav{
 }
 
 #header {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     color: orange;
 }
@@ -65,6 +67,14 @@ nav{
     font-size: 18px;
 }
 
+#home-icon {
+    margin-right: 30px;
+}
+
+#about-icon {
+    margin-right: 30px;
+}
+
 #navButton {
     padding: 10px 30px;
     background-color: darkorange;
@@ -73,7 +83,6 @@ nav{
     border: none;
     border-radius: 10px;
 }
-
 
 .right-nav {
     display: flex;
