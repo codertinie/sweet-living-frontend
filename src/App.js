@@ -31,10 +31,10 @@ function App() {
   return (
   <>
   
-      <Navbar />
+      <Navbar user={user} setUser={setUser}/>
         <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="home" element={<Home /> } >
+          <Route path="/" element={<Landing user={user}/>} />
+          <Route path="home" element={<Home user={user}/> } >
             <Route index element={<Footer/>} />
           </Route>
           <Route path="about" element={<About />} />
