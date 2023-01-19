@@ -42,13 +42,13 @@ function Navbar() {
       <div className="middle-nav">
       <div className="container1-nav">
         <NavLink to="/home" className="navlink" onClick={aLink}>
-          <FaHome size={40} color="black"/>
+          <FaHome size={50} color="black" id="home-icon"/>
         </NavLink>
         <NavLink to="/about" className="navlink" onClick={aLink}>
-          <FaInfoCircle size={40} color="black"/>
+          <FaInfoCircle size={40} color="black" id="about-icon"/>
         </NavLink>
         <NavLink to="/contact" className="navlink" onClick={aLink}>
-          <FaPhone size={40} color="black"/>
+          <FaPhone size={39} color="black" id="contact-icon"/>
         </NavLink>
       </div>
       </div>

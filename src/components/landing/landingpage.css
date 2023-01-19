@@ -52,6 +52,7 @@ video{
     gap: 20px;
     margin-bottom: 80px;
     top: 50vh;
+    text-align: right;
 }
 
 .houses-btn {
