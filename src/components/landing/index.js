@@ -4,7 +4,7 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import music from "./video5.mp4";
 import { useNavigate } from "react-router-dom";
 
-function Landing(){
+function Landing({ user }){
     window.addEventListener('scroll', windowScrolled)
 
     function windowScrolled(){
@@ -21,15 +21,30 @@ function Landing(){
     const navigate = useNavigate()
 
     function handleBuyHouse(){
-        navigate("/houses")
+        {user ? (
+            navigate("/houses")
+        ) : (
+            navigate("/login")
+        ) }
+        
     }
 
     function handleRentHouse(){
-        navigate("/apartments")
+        {user ? (
+            navigate("/apartments")
+        ) : (
+            navigate("/login")
+        ) }
+        
     }
 
     function handleSellHouse(){
-        navigate("/seller")
+        {user ? (
+            navigate("/seller")
+        ) : (
+            navigate("/login")
+        ) }
+        
     }
     return(
         < div id="landing-page">
