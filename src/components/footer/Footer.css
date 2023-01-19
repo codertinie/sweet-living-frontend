@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins&display=swap');
-.footer{
+/* .footer{
     font-family:'Tangerine' , cursive;
     color: #fff;
     display: flex;
@@ -7,29 +7,32 @@
     height: 100px;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     /* min-height: calc(10vh - 95px);*/
     /* min-height: 100vh; */
-    flex-direction: column;
-    margin-top: auto;
+    /* flex-direction: column;
+    margin-top: auto; */
     /* position: absolute;
     bottom: 0px; */
-    text-decoration: underline;
+    /* text-decoration: underline;
 }
 h2{
     font-family: 'Tangerine', cursive;
     text-decoration: underline;
     
-}
-h1:hover{
+} */
+/* h1:hover{
         background-color: rgb(52, 167, 193);
-}
+} */
 
 
-p:hover{
+/* p:hover{
     background-color: rgb(21, 105, 157);
-}
-.section1{
+}*/ 
+/* .hide-Footer{
+    display: none;
+} */
+/* .section1{
     font-family: sans-serif;
     color: #fff;
     position: relative;
@@ -41,8 +44,8 @@ p:hover{
     display: flex !important;
     margin-left: 2px;
     text-decoration: underline;
-}
-.section2 {
+} */
+/* .section2 {
     font-family: sans-serif;
     color: #fff;
     position: relative;
@@ -54,4 +57,52 @@ p:hover{
     gap: 25px;
     display: flex !important;
     margin-left: 2px;
+} */
+:root{
+    --primary-color:#006e90;
+    --secondary-color: #f18f01;
+}
+footer{
+    
+	background-color: var(--primary-color);
+	color: white;
+    max-width: 100%;
+    padding-top: 10px;
+    margin-top: 15%;
+}
+.footer{
+    display: flexbox;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: 0.25fr repeat(1, 0.2fr) 0.2fr;
+    /* padding-left: 80px; */
+    /* gap: 1rem; */
+    position: relative;
+    left: 20rem;
+    font-size: larger;
+}
+.footer-header{
+    margin-left: 20px;
+    text-align: left;
+
+}
+li{
+    list-style: none;
+    font-family: inherit;
+}
+.contact-links ul{
+    display:flex;
+    /* margin-left: 10rem;
+    position: relative;
+    align-items: center; */
+    text-align: center;
+    justify-content: center !important;
+}
+.contact-links li{
+    padding-left: 15px;
+    font-size: xx-large;
+}
+.end{
+    text-align: center;
 }

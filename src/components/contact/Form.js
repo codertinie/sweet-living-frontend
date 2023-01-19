@@ -20,6 +20,7 @@ function Form() {
     }
 
     return (
+        <div className='main'>
         <div  className="container">
             <h3>Contact us</h3>
             <form onSubmit={handleSubmit} className="form">
@@ -66,6 +67,8 @@ function Form() {
                 </textarea>
                 <button type="submit" className="send">Send</button>
             </form>
+        </div>
+
         </div>
     )
 }

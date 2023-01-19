@@ -1,44 +1,109 @@
-.about {
+/* .about {
     margin-top: 3px;
-    display: flex;
+    margin-bottom: 0;
+    
     font-size: 23px;
+    height: 82vh;
     padding: 4px;
     text-align: center;
-    background: linear-gradient(to right, hsl(229, 73%, 37%) 0, hsl(175, 88%, 48%) 100%, hsl(197, 70%, 44%) 3%);
-}
+    align-items: center; */
+    /* background: linear-gradient(to right, hsl(24, 73%, 37%) 0, hsl(32, 29%, 66%) 100%, hsl(24, 97%, 47%) 3%); */
+    /* position: relative; */
 
-h1 {
-    background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
-    background-size: 20%;
-    background-position: 50% 50%;
-    -webkit-background-clip: text;
-    color: hsla(0, 0%, 0%, 0.08);
-    animation: zoomout 10s ease 500ms forwards;
-    font-size: 70px;
+    
+/* }
 
-}
+.content h1 { */
+    /* color: hsla(262, 95%, 41%, 0.08); */
+    /* font-size: 70px;
+    color: #F18F01; */
+/* background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png); */
+/* }
 
 
 .content {
     font-size: 20px;
     padding: 24px;
     text-align: center;
-    width: 50%;
-    height: 68vh
-}
+    width: 100%; */
+    /* height: 68vh */
+/* }
 
-span {
-    color: crimson;
+ span {
+    color: #F18F01;
     text-align: center;
-}
+} 
 
-.about-img {
+.about-img { */
     /* position: relative; */
-    background-image: url();
-    background-repeat: no-repeat;
+    /* background-image: url(); */
+    /* background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
-    margin: 4px;
+    margin: 4px; */
     /* height: 400px; */
-    width: 50%;
+    /* width: 50%;
+} */
+:root{
+    --primary-color:#006e90;
+    --secondary-color: #f18f01;
+}
+.about{
+    width: 100%;
+}
+.about-img img{
+    height: 40rem;
+    width: 100%;
+    opacity: 0.7;
+}
+.about-img-overlay{
+    position: relative;
+    bottom: 25rem;
+    text-align: center;
+}
+.about-img-overlay h1{
+    color:var(--secondary-color);
+    font-weight: 900;
+    font-size: 5rem;
+}
+.about-img-overlay p{
+    color: white;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.vision{
+    display: flex;
+    position: relative;
+    bottom: 10rem;
+    left: 15rem;
+    height: 30rem;
+}
+.vision p{
+    font-size: 1.5rem;
+    width: 30%;
+    margin-left: 70px;
+}
+.vision span{
+    text-align: center;
+    margin-left: 10rem;
+    font-size: 1.8rem;
+
+}
+.aim{
+    display: flex;
+    position: relative;
+    left: 15rem;
+    margin-bottom: 30px;
+    
+}
+.aim p{
+    font-size: 1.5rem;
+    width: 30%;
+    margin-right: 70px;
+    margin-top: 0px;
+}
+.aim span{
+    text-align: center;
+    margin-left: 10rem;
+    font-size: 1.8rem
 }
