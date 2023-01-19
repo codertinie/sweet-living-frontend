@@ -117,39 +117,39 @@ button {
     display: flex;
     justify-content: between-around;
     position: relative;
-    right: 180px;
+    right: 160px;
 }
 
 .const_2 {
     display: flex;
     justify-content: between-around;
     position: relative;
-    right: 180px;
+    right: 160px;
 }
 
 .const_3 {
     display: flex;
     justify-content: between-around;
     position: relative;
-    right: 180px;
+    right: 160px;
 }
 
 .const_4 {
     display: flex;
     justify-content: between-around;
     position: relative;
-    right: 180px;
+    right: 160px;
 }
 
 .const_5 {
     display: flex;
     justify-content: between-around;
     position: relative;
-    right: 180px;
+    right: 160px;
 }
 
-.const_6 {
+/* .const_6 {
 
     position: relative;
     right: 200px;
-}
+} */
