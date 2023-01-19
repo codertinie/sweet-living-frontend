@@ -29,15 +29,23 @@ export const SellerPage = () => {
       .then((data) => console.log(data));
     let form = document.querySelector("form");
     let p = document.createElement("p");
+    let b =  document.createElement("button");
     document.getElementById("ct").appendChild(p);
+    document.getElementById("ct").appendChild(b);
     p.style.fontFamily = "Lato,Helvetica,Arial,sans-serif";
     p.style.fontSize = "40px";
     p.style.textAlign = "center";
     p.style.marginTop = "40px";
     p.style.color = "#F18F01";
     p.innerText = "Your property has been uploaded!!!.";
+    b.innerText = "Go Back";
+    b.className = "back";
+    b.onclick = function() {
+      window.history.back()
+  };
     document.querySelector(".auth-form-container").querySelector("h1").remove();
     form.remove();
+    
   }
   function handleChange(e) {
     setValue((previouState) => {
