@@ -35,6 +35,8 @@ const Singleproperty = () => {
   let image5 = property.map((item) => item.image_url5);
   let description = property.map((item) => item.description);
   let seller = property.map((item) => item.seller);
+  let name = property.map((item) => item.name);
+  let price = property.map((item) => item.price);
 
   console.log(property);
   console.log(description);
@@ -72,6 +74,10 @@ const Singleproperty = () => {
 // textArea.style.height = 'auto';
 // textArea.style.height = textArea.scrollHeight + 'px';
 
+function handleBooking() {
+  alert("Booking successful!, check your email for more details");
+  navigate("/home")
+}
   
     return ( 
       
@@ -105,23 +111,56 @@ const Singleproperty = () => {
       </button>
   </div>
 ) : (
-  <div className="grid-item grid-item-6">
+  <div className="description">
     <h3>Description</h3>
   <textarea className="myInput" type="text" value={des} onChange={(e) => setDes(e.target.value)}/>
     <button onClick={saveDescription}>Save</button>
   </div>
-  
-
-  
 )}
 
+  <div className="name">
+  {name}
+  </div>
+
+  <div className="price">
+    {price}
+  </div>
 
       <div className="seller-info">
-        <h3>Seller info</h3>
+      <p> 
+        Please leave your details and our property advisor will get in touch with you.
+      </p>
+      <label>Your Name*</label>
+      <div className="Name">
+        <input 
+        type="text" 
+        name="name"
+        required="required"
+        />
+        </div>
+          <label>Phone Number</label>
+          <div className="phone">
+          <input type="text"
+          required="required"
+          />
+          </div>
+          
+          <label > Email </label>
+          <div className="email">
+            
+            <input type="email" 
+              name="email"
+              required="required"
+            />
+          </div>
+     
+      
+   
+        {/* <h3>Seller info</h3>
         <li>Name : {seller.map((item) => item.username)}</li>
         <li>Email : {seller.map((item) => item.email)}</li>
-        <li>Phone Number</li>
-        <button>BOOK NOW</button>
+        <li>Phone Number</li> */}
+        <button onClick={handleBooking}>BOOK NOW</button>
       </div>
       
       <div className="location">

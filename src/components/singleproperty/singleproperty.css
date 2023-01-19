@@ -6,26 +6,28 @@
 .image-1 {
   position: absolute;
   top: 2vh;
-  left: 15vw;
+  margin-top: 0%;
+  left: 7px;
   
 }
 
 .image-1 img {
-  max-width: 70vw;
-  max-height: 99vh;
+  object-fit: cover;
+  width: 98vw;
+  height: 100vh;
 }
 
 
 .image-2 {
     position: absolute;
-    top: 102vh;
+    top: 104vh;
     left: 25vw;
   
 }
 
 .image-3 {
   position: absolute;
-  top: 102vh;
+  top: 104vh;
   left: 50vw;
 }
 
@@ -44,7 +46,7 @@
 
 .image-4 {
   position: absolute;
-  top: 102vh;
+  top: 104vh;
 }
 
 .image-5 img {
@@ -53,34 +55,53 @@
 
 .image-5 {
   position: absolute;
-  top: 102vh;
+  top: 104vh;
   left: 75vw;
 }
 
 .description {
   position: absolute;
-  top: 140vh;
-  width: 60vw;
+  top: 195vh;
+  width: 55vw;
+  font-size: larger;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+ 
 }
 
 .seller-info {
   position: absolute;
   top: 145vh;
-  left: 75vw;
+  left: 65vw;
+  max-width: 28vw;
+  min-height: 80vh;
   border-style: solid;
   border-radius: 15px;
   padding: 20px;
-  text-align: center;
   box-shadow: 10px 10px 10px;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  
+  
 }
 
 .seller-info button {
-  margin-top: 60px;
+ top: 3vh;
+ left: 8vw;
+ position: relative;
+ background-color: #F18F01;
+ padding: 15px;
+}
+
+.seller-info p {
+  font-size: 30px;
+}
+
+.seller-info input {
+  border: solid 1px ;
 }
 
 .location {
   position: absolute;
-  top: 180vh;
+  top:220vh;
 }
 
 .location iframe {
@@ -90,6 +111,32 @@
 
 .delete-btn {
   position: absolute;
-  top: 230vh;
+  top: 260vh;
   left: 93vw;
+}
+
+.price {
+  position: Absolute;
+  top: 146vh;
+  left: 45vw;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.name {
+  position: absolute;
+  top: 140vh;
+  font-size: 50px;
+  max-width: 40vw;
+  border-bottom: 1px solid ;
+  padding-bottom: 30px;
+}
+
+.myInput {
+  width: 55vw;
+  height: 12vh;
+}
+
+.myInput button {
+  background-color: #F18F01;
 }
