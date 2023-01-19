@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Footer.css'
-import { FaPhoneSquareAlt, FaRegEnvelope, FaWhatsapp, FaTwitter, FaGithub, FaFacebook, FaWhatsappSquare, } from "react-icons/fa";
+import {  FaRegEnvelope, FaWhatsapp, FaTwitter, FaGithub, FaFacebook } from "react-icons/fa";
 import { useLocation } from 'react-router-dom';
 
 
@@ -47,9 +47,9 @@ function Footer() {
             <li>info@sweetliving.co.ke</li>
           </ul>
         </div>
-        </div>
+        
         <div className='f-link2'>
-        <h3 className='footer-header'>Company</h3>
+        <h3 className='footer-header'>COMPANY</h3>
           <ul>
             <li>ABOUT US </li>
             <li>EXPLORE</li>
@@ -69,6 +69,7 @@ function Footer() {
           </ul>
         </div>
     </div>  
+    </div>
   
     <div className='contact-links'>
     <ul>
@@ -79,6 +80,9 @@ function Footer() {
             <li><FaRegEnvelope/></li>
         </ul>
 
+    </div>
+    <div className='end'>
+                <p> &copy; {new Date().getFullYear()} Copyright:Sweet Living Homes Kenya|All Rights Reserved </p>
     </div>
     
     </footer>
