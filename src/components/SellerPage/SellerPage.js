@@ -248,10 +248,10 @@ export const SellerPage = () => {
     console.log(formData)
   return (
     <div className="auth-form-container" id='ct'>
-      <h2>Seller Page</h2>
+      <h1>Seller Page</h1>
       <form onSubmit={handleSubmit}>
         <div class="register-form">
-          <label htmlFor="house_features">House Features</label>
+          <label className="label" htmlFor="house_features">House Features</label>
           <input
             value={formData.house_features}
             name="House_features"
@@ -260,7 +260,7 @@ export const SellerPage = () => {
             placeholder="Enter house features"
             required
           />
-          <label htmlFor="url1">Image url 1</label>
+          <label className="label" htmlFor="url1">Image url 1</label>
           <input
             value={formData.url1}
             name="Image_url_1"
@@ -269,7 +269,7 @@ export const SellerPage = () => {
             placeholder="Enter image url 1"
             required
           />
-          <label htmlFor="url2">Image url 2</label>
+          <label className="label" htmlFor="url2">Image url 2</label>
           <input
              value={formData.url2}
              name="Image_url_2"
@@ -278,7 +278,7 @@ export const SellerPage = () => {
              placeholder="Enter image url 2"
              required
           />
-          <label htmlFor="url3">Image url 3</label>
+          <label className="label" htmlFor="url3">Image url 3</label>
           <input
             value={formData.url3}
             name="Image_url_3"
@@ -287,7 +287,7 @@ export const SellerPage = () => {
             placeholder="Enter image url 3"
             required
           />
-          <label htmlFor="url4">Image url 4</label>
+          <label className="label" htmlFor="url4">Image url 4</label>
           <input
           value={formData.url4}
           name="Image_url_4"
@@ -296,7 +296,7 @@ export const SellerPage = () => {
           placeholder="Enter image url 4"
           required
           />
-          <label htmlFor="url5">Image url 5</label>
+          <label className="label" htmlFor="url5">Image url 5</label>
           <input
             value={formData.url5}
             name="Image_url_5"
@@ -305,7 +305,7 @@ export const SellerPage = () => {
             placeholder="Enter image url 5"
             required
           />
-          <label htmlFor="location">Location</label>
+          <label className="label" htmlFor="location">Location</label>
           <input
             value={formData.location}
             name="Location"
@@ -314,7 +314,7 @@ export const SellerPage = () => {
             placeholder="Enter location"
             required
           />
-          <label htmlFor="number_of_rooms">Number of Rooms</label>
+          <label className="label" htmlFor="number_of_rooms">Number of Rooms</label>
           <input
              value={formData.number_of_rooms}
              name="Number_of_rooms"
@@ -323,7 +323,7 @@ export const SellerPage = () => {
              placeholder="Enter number of rooms"
              required
           />
-          <label htmlFor="price">price</label>
+          <label className="label" htmlFor="price">price</label>
           <input
              value={formData.price}
              name="Price"
@@ -332,7 +332,7 @@ export const SellerPage = () => {
              placeholder="Enter price"
              required
           />
-          <label htmlFor="category">Category</label>
+          <label className="label" htmlFor="category">Category</label>
           <input
            value={formData.category}
            name="Category"
@@ -341,8 +341,8 @@ export const SellerPage = () => {
            placeholder="Enter category"
            required
           />
-          <label htmlFor="description">Description</label>
-          <input
+          <label className="label" htmlFor="description">Description</label>
+          <input 
             value={formData.description}
             name="Description"
             onChange={handleChange}
@@ -351,7 +351,7 @@ export const SellerPage = () => {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className="submit-btn" type="submit">Submit</button>
       </form>
     </div>
   );
