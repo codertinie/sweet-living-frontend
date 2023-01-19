@@ -20,7 +20,7 @@ function Footer() {
 
   return(
     <footer className={`${hide ? 'hide-footer' : ''}`}>
-<div className='footer'>
+        <div className='footer'>
       {/* <div className='section1'>
         <h2>SWEET-LIVING</h2>
         <p><FaPhoneSquareAlt/>
@@ -35,65 +35,51 @@ function Footer() {
                 <div className='section2'>
                 <p> &copy; {new Date().getFullYear()} Copyright:Sweet Living Homes Kenya|All Rights Reserved </p>
                 </div> */}
-                <div className="footer">
-      <div className="footer-links">
-        <div className="f-message">
-          <h2>MOVIE FORUM</h2>
-        </div>
-        <div className="f-social">
-          <h3>Join Us</h3>
-          <a href="/">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="/">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="/">
-            <i class="fa-brands fa-square-instagram"></i>
-          </a>
-          <a href="/">
-            <i class="fa-brands fa-square-whatsapp"></i>
-          </a>
-        </div>
-      </div>
-      <div className="footer-links">
-        <div className="about">
-          <h3>About MovieForum</h3>
-          <ul>
-            <li>About Us</li>
-            <li>Latest Shows</li>
-            <li>Privacy</li>
-            <li>Terms and Conditions</li>
-          </ul>
-        </div>
-        <div className="about">
-          <h3>Help</h3>
-          <ul>
-            <li>Help Center</li>
-            <li>Contact Us</li>
-            <li>Policy</li>
-          </ul>
-        </div>
-        <div className="subscribe">
-          <h3>Subscribe</h3>
-          <p>Get out Newsletters</p>
-          <input type="email" placeholder="Enter your email" required />
-          <button id="btn" type="submit" name="" value="Subscribe">
-            Subscribe
-          </button>
-        </div>
-      </div>
-      <div class="end">
-        <p>
-          © 2022 movieforum.com or its affiliates | All rights reserved,terms
-          and conditions applied
-        </p>
-      </div>
-    </div>
+      <div className='footer-links'>
 
+        <div className='f-link1'>
+          <h3 className='footer-header'>SWEET-LIVING</h3>
+          <ul>
+            <li>Sifa Towers, Ring Road Kilimani</li>
+            <li>P.O. Box 2202-00100</li>
+            <li>Nairobi, Kenya</li>
+            <li>+254 711 123 123</li>
+            <li>info@sweetliving.co.ke</li>
+          </ul>
+        </div>
+        </div>
+        <div className='f-link2'>
+        <h3 className='footer-header'>Company</h3>
+          <ul>
+            <li>ABOUT US </li>
+            <li>EXPLORE</li>
+            <li>SERVICES</li>
+            <li>GET IN TOUCH</li>
+            <li>PRIVACY POLICY</li>
+          </ul>
+        </div>
+        <div className='f-link3'>
+        <h3 className='footer-header'>EXPLORE</h3>
+          <ul>
+            <li>DEVELOPMENTS</li>
+            <li>FOR SALE</li>
+            <li>FOR RENT</li>
+            <li>TO SELL</li>
+            <li>NEWS</li>
+          </ul>
+        </div>
     </div>  
   
-  
+    <div className='contact-links'>
+    <ul>
+            <li><FaWhatsapp/></li>
+            <li><FaFacebook/></li>
+            <li><FaTwitter/></li>
+            <li><FaGithub/></li>
+            <li><FaRegEnvelope/></li>
+        </ul>
+
+    </div>
     
     </footer>
     
