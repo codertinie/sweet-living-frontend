@@ -1,10 +1,13 @@
 .seller {
     min-height: 100vh;
-    background-color: aquamarine;
+    background-color: #F18F01;
     position: relative;
     max-width: 100vw;
     display: flex;
-    background-image: url("");
+    text-align: center;
+    color: #F18F01;
+
+
 }
 
 .image-url {
@@ -18,6 +21,8 @@
     text-decoration: underline;
     display: flex;
     flex-direction: column;
+    background-color: #006e90;
+
 }
 
 .auth-form-container,
@@ -28,6 +33,7 @@
     width: 50%;
     margin: 0 auto;
     padding: 20px;
+
 }
 
 @media screen and (min-width: 800px) {
@@ -36,6 +42,8 @@
         border: 1px solid white;
         border-radius: 10px;
         margin: 0.5rem;
+
+
     }
 }
 
@@ -51,80 +59,97 @@ input {
     border-radius: 10px;
 }
 
- button {
+button {
+
+
     border: none;
     font-size: 23px;
-    background-color: #7B6FD2;
+    background-color: #F18F01;
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
     color: #fff;
     max-width: 30%;
-} 
- 
-  .link-btn {
+
+}
+
+.link-btn {
     background: none;
     color: white;
     text-decoration: underline;
 }
-.cover-container-displayz{
+
+
+.cover-container-displayz {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:100%;
+    width: 100%;
+    background-color: #F18F01;
 }
-.card-login-display{
+
+.card-login-display {
     box-shadow: rgba(27, 27, 211, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     height: 90vh;
     display: flex;
     flex-direction: column;
     padding: 40px;
     position: relative;
+
 }
-.seller image{
+
+.seller image {
     position: relative;
 }
-.card-login-display button{
-border: none;
+
+.card-login-display button {
+    border: none;
     font-size: 23px;
-    background-color: #7B6FD2;
+    background-color: #F18F01;
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
     color: #fff;
     max-width: 20%;
 }
-.cont_1{
+
+.cont_1 {
     display: flex;
     justify-content: between-around;
     position: relative;
     right: 180px;
 }
-.const_2{
+
+.const_2 {
     display: flex;
     justify-content: between-around;
     position: relative;
     right: 180px;
 }
-.const_3{
-    display: flex;
-        justify-content: between-around;
-        position: relative;
-        right: 180px;
-}
-.const_4{
+
+.const_3 {
     display: flex;
     justify-content: between-around;
     position: relative;
     right: 180px;
 }
-.const_5{
+
+.const_4 {
     display: flex;
     justify-content: between-around;
     position: relative;
     right: 180px;
 }
-.const_6{
+
+.const_5 {
+    display: flex;
+    justify-content: between-around;
+    position: relative;
+    right: 180px;
+}
+
+.const_6 {
+
     position: relative;
     right: 200px;
 }

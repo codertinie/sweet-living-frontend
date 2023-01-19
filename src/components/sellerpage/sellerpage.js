@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
-import CoverDiv from "../reusable/CoverDiv";
 import "./seller.css";
 
-export const SellerPage = (props) => {
-  const [name, setName] = useState("");
+export const SellerPage = () => {
+const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [image2, setImage2] = useState("");
   const [image3, setImage3] = useState("");
@@ -16,27 +14,61 @@ export const SellerPage = (props) => {
   const [location, setLocation] = useState("");
   const [rooms, setRooms] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+
+    const[formData, setValue] =useState({
+        house_features:'',
+        url1:'',
+        url2:'',
+        url3:'',
+        url4:'',
+        url5:'',
+        location:'',
+        number_of_rooms:'',
+        price:'',
+        category:'',
+        description:''
+    })
+    function handleSubmit(e){
+        e.preventDefault();
+        fetch('http://localhost:3000/properties',{
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body:JSON.stringify(formData)
+          })
+          .then(res=>res.json())
+          .then(data=>console.log(data))
+          let form = document.querySelector('form');
+          let p = document.createElement('p');
+            document.getElementById('ct').appendChild(p);
+            p.style.fontFamily="Lato,Helvetica,Arial,sans-serif";
+            p.style.fontSize="40px"
+            p.style.textAlign="center"
+            p.style.marginTop="40px"
+            p.style.color="#F18F01"
+            p.innerText="Your property has been uploaded!!!."
+            document.querySelector('.auth-form-container').querySelector('h2').remove();
+            form.remove();
+
+    }
+    function handleChange(e){
+        setValue((previouState)=>{
+             return {...previouState, [e.target.id]:e.target.value}
+        })
+    }
+    console.log(formData)
 
   return (
-    <Form>
+     <>
       <div className="seller">
         <div className="seller-image">
           <img src=''/>
         </div>
-          
         <div class="register-form">
             <h4>seller page</h4>
-
           <div className="card-login-display">
-
-           
-           
-
-
-          
               <label htmlFor="name">House Features</label>
               <input
               value={name}
@@ -45,9 +77,6 @@ export const SellerPage = (props) => {
               id="house-type"
               placeholder="house type"
             />
- 
-            
-            
             <div className="image-url">
               <div className="cont_1">
                 <div>
@@ -71,8 +100,6 @@ export const SellerPage = (props) => {
                   />
                 </div>
               </div>
-
-
               <div className="const_2">
                 <div>
                   <label htmlFor="name">Image url 3</label>
@@ -95,8 +122,6 @@ export const SellerPage = (props) => {
                   />
                 </div>
               </div>
-
-
               <div className="const_3">
                 <div>
                 <label htmlFor="name">Image url 5</label>
@@ -120,8 +145,6 @@ export const SellerPage = (props) => {
             />
             </div>
             </div>
-
-
               <div className="const_4">
                 <div>
                 <label htmlFor="location">Location</label>
@@ -145,8 +168,6 @@ export const SellerPage = (props) => {
               />
               </div>
               </div>
-            
-
             <div className="const_5">
               <div>
                <label htmlFor="name">price</label>
@@ -169,19 +190,12 @@ export const SellerPage = (props) => {
             />
               </div>
             </div>
-
-
-            
-             
-            
             </div>
-            
-
             <button type="submit">Submit</button>
           </div>
         </div>
       </div>
-    </Form>
+    </>
   );
 };
 export default SellerPage;
