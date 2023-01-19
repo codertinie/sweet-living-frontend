@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .seller {
     min-height: 100vh;
     background-color: #F18F01;
@@ -18,11 +20,13 @@
 
 .register-form {
     text-align: center;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     display: flex;
     flex-direction: column;
     background-color: #006e90;
-    /* width: 60rem; */
+    padding: 30px 0;
+    border-radius: 20px ;
+    height: 70rem;
 
 }
 
@@ -32,7 +36,7 @@
     flex-direction: column;
     width: 60rem; 
     /* margin: 0 auto; */
-    padding: 20px;
+    /* padding: 20px; */
     position: relative;
     left: 27rem;
 
@@ -40,10 +44,16 @@
 .auth-form-container h1{
     text-align: center;
     color: #006e90;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    margin-top: 80px;
+
 }
 @media screen and (min-width: 800px) {
     .auth-form-container {
-        padding: 5rem;
+        padding: 1rem;
         border: 1px solid white;
         border-radius: 10px;
         margin: 0.5rem;
@@ -56,7 +66,7 @@
     text-align: left;
     padding: 0.25rem 0;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-left: 110px;
     text-decoration: none;
 }
@@ -67,10 +77,11 @@
     border: none;
     border-radius: 10px;
     width: 70%;
-    margin-left: 110px;
-    
+    /* margin-left: 110px; */
 }
-
+.register-form input::placeholder{
+    font-style: italic;
+}
 .submit-btn {
 
 
@@ -81,9 +92,10 @@
     border-radius: 10px;
     cursor: pointer;
     color: #fff;
-    max-width: 30%;
-
-} */
+    width: 40%;
+    margin-left: 15rem;
+    margin-top: 10px;
+} 
 
 .link-btn {
     background: none;
@@ -125,43 +137,56 @@
     max-width: 20%;
 }
 
-.cont_1 {
+.ct1 {
     display: flex;
-    justify-content: between-around;
-    position: relative;
-    right: 160px;
+    justify-content: space-around;
+    width: 100%;
+    /* position: relative;
+    right: 160px; */
 }
 
-.const_2 {
+.ct2 {
     display: flex;
-    justify-content: between-around;
-    position: relative;
-    right: 160px;
+    /* justify-content: space-between; */
+    /* position: relative;
+    right: 160px; */
 }
 
-.const_3 {
+.ct3 {
     display: flex;
-    justify-content: between-around;
     position: relative;
-    right: 160px;
+    right: 10px;
+    width: 30rem;
 }
 
-.const_4 {
+.ct4 {
     display: flex;
-    justify-content: between-around;
-    position: relative;
-    right: 160px;
+    width: 65rem;
+    /* position: relative;
+    right: 160px; */
 }
 
-.const_5 {
+.ct5 {
     display: flex;
-    justify-content: between-around;
-    position: relative;
-    right: 160px;
+    width: 65rem;
+    
 } 
-
-/* .const_6 {
-
+.ct6{
+    width: 50%;
     position: relative;
-    right: 200px;
-}  */
+    right: 3.4rem;
+}
+.ct5  #price{
+    width: 22.2rem;
+}
+.same_size{
+    position: relative;
+    left: 4rem;
+}
+.texta1{
+    border-radius: 10px;
+    width: 50rem;
+    position: relative;
+    left: 4rem;
+    /* padding: 10rem; */
+}

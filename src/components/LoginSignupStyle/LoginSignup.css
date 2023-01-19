@@ -64,7 +64,7 @@ form .form-group
     left: 10px;
     width: 0%;
     height: 2px;
-    background-color: red;
+    background-color: #006e90;
     transition: .5s;
 }
 
@@ -102,7 +102,7 @@ input[type="Submit"]
 input[type="Submit"]:hover
 {
     background-color: rgba(127, 188, 241, 0.854);
-    color: red;
+    color: #006e90;
     border: none;
 }
 
@@ -118,7 +118,7 @@ input[type="Submit"]:hover
 .login_link a,
 .view_booking a
 {
-    color: red;
+    color: #006e90;
     text-decoration: none;
     padding-left: 5px;
     font-size: 20px;
@@ -130,6 +130,18 @@ input[type="Submit"]:hover
 .view_booking a:hover
 {
     text-decoration: underline;
+}
+.outline{
+    background-color: #f5a020;
+    color: #fff;
+    /* padding: 10px; */
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: none;
+}
+.outline:hover{
+    background-color: #e3b672;
 }
 
 

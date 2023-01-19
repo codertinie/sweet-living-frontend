@@ -8,7 +8,7 @@ import { FaPhone } from 'react-icons/fa';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { FontAwesome } from "react-icons/fa";
 
-function Navbar() {
+function Navbar({ user, setUser}) {
 
   const menu = () => {
     const links = document.querySelector('.middle-nav')
@@ -22,6 +22,17 @@ function Navbar() {
     const menu = document.querySelector('.menu')
     links.classList.remove('active')
     menu.classList.remove('clicked')
+  }
+
+  function handleLogout() {
+    fetch("/logout", {
+      method: "DELETE"
+  })
+      .then((r) => {
+          if (r.ok) {
+              setUser(null)
+          }
+      })
   }
 
   return (
@@ -41,30 +52,50 @@ function Navbar() {
 
       <div className="middle-nav">
       <div className="container1-nav">
-        <NavLink to="/home" className="navlink" onClick={aLink}>
+
+        { user ? (
+          <NavLink to="/home" className="navlink" onClick={aLink}>
+                  <FaHome size={50} color="black" id="home-icon"/>
+        </NavLink>
+        ) : (
+          <NavLink to="/signup" className="navlink" onClick={aLink}>
           <FaHome size={40} color="black"/>
         </NavLink>
+        )}
+
+        
         <NavLink to="/about" className="navlink" onClick={aLink}>
-          <FaInfoCircle size={40} color="black"/>
+          <FaInfoCircle size={40} color="black" id="about-icon"/>
         </NavLink>
         <NavLink to="/contact" className="navlink" onClick={aLink}>
-          <FaPhone size={40} color="black"/>
+          <FaPhone size={39} color="black" id="contact-icon"/>
         </NavLink>
       </div>
       </div>
 
-
-      <div className="right-nav">
+      {user ? (
+        <div className="right-nav">
         <NavLink to="/login" className="navlink">
-          <button id="navButton">Signin</button>
+          <button id="navButton" onClick={handleLogout}>Logout</button>
         </NavLink>
-
         <div className="menu" onClick={menu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
       </div>
+      ) : (
+        <div className="right-nav">
+        <NavLink to="/login" className="navlink">
+          <button id="navButton">Login</button>
+        </NavLink>
+        <div className="menu" onClick={menu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+      </div>
+      )}
     </nav>
   );
 }

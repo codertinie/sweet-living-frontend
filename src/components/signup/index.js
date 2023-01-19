@@ -146,7 +146,7 @@ function endNotification(){
           className="outline text-sky-400 hover:bg-sky-400 hover:text-white rounded-lg p-2 "
           onClick={submitHandler}
           type="button">
-          SIGN IN
+          Sign Up
         </button>
 
         <div className="login_link">
