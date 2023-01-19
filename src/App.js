@@ -11,7 +11,7 @@ import About from "./components/about/About.js";
 import Nopage from "./components/nopage";
 import AllApartments from "./components/home/AllApartments"
 import AllHouses from "./components/home/AllHouses"
-import SellerPage from "./components/SellerPage";
+import SellerPage from "./components/SellerPage/sellerpage";
 import { useState, useEffect } from "react";
 
 
