@@ -12,6 +12,7 @@ function SellerSignup({ onSignup }) {
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [notification,setNotification] = useState(false);
+  
 
 function handleNotification(){
     setNotification((notification) => !notification);
@@ -23,9 +24,10 @@ function endNotification(){
     navigate("/login")
 }
 
-
+const type = "seller"
   function submitHandler(e) {
     e.preventDefault();
+    ;
     fetch("/sellersignup", {
       method: "POST",
       headers: {
@@ -37,6 +39,7 @@ function endNotification(){
         phone_number,
         password,
         password_confirmation: passwordConfirmation,
+        type: type
       }),
     }).then((res) => {
 
@@ -50,6 +53,7 @@ function endNotification(){
     });
   }
 
+  console.log(type)
 
   return (
     <div className="form-inner">
@@ -144,6 +148,7 @@ function endNotification(){
           <label>Password Confirmation</label>
         </div>
       
+
         <button
           className="outline text-sky-400 hover:bg-sky-400 hover:text-white rounded-lg p-2 "
           onClick={submitHandler}

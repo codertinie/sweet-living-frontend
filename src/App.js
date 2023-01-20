@@ -28,7 +28,7 @@ function App() {
     });
 }, []);
 
-
+console.log(user)
   return (
   <>
   
@@ -45,9 +45,9 @@ function App() {
           <Route path="/apartments" element={<AllApartments />} />
           <Route path="/houses" element={<AllHouses />} />
           <Route path="singleproperty/:id" element={<Singleproperty />} />
-          <Route path="/seller" element={<SellerPage />}/>
+          <Route path="/seller" element={<SellerPage user={user}/>}/>
           <Route path="*" element={<Nopage />} />
-          <Route path="/sellersignup" element={<SellerSignup />}/>
+          <Route path="/sellersignup" element={<SellerSignup onSignup={setUser}/>}/>
 
         </Routes>
 

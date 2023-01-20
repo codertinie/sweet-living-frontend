@@ -47,7 +47,6 @@ function endNotification(){
     });
   }
 
-
   return (
     <div className="form-inner">
       <h1>Sweet Living SignUp</h1>

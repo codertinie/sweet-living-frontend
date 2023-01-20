@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./seller.css";
 
-export const SellerPage = () => {
+export const SellerPage = ({ user }) => {
   const [formData, setValue] = useState({
     houses: "",
     image_url: "",
@@ -14,6 +14,7 @@ export const SellerPage = () => {
     price: "",
     category: "",
     description: "",
+    seller_id: user.id,
   });
   function handleSubmit(e) {
     e.preventDefault();
@@ -45,6 +46,7 @@ export const SellerPage = () => {
     });
   }
   console.log(formData);
+  console.log(user.id)
   return (
     <div className="auth-form-container" id="ct">
       <h1>Seller Page</h1>
@@ -208,6 +210,9 @@ export const SellerPage = () => {
             placeholder="Enter description"
             required
           ></textarea>
+          {/* <input id="seller-id" 
+          value={user.id}
+          /> */}
           <button className="submit-btn" type="submit">
             Submit
           </button>
