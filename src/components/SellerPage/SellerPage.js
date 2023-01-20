@@ -41,7 +41,7 @@ export const SellerPage = () => {
     b.innerText = "Go Back";
     b.className = "back";
     b.onclick = function() {
-      window.history.back()
+      window.location.reload()
   };
     document.querySelector(".auth-form-container").querySelector("h1").remove();
     form.remove();
