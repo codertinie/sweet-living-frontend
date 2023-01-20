@@ -2,7 +2,7 @@
   "name": "sweet-living-frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3000",
+  "proxy": "https://sweet-living-backend-production.up.railway.app",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
