@@ -14,6 +14,7 @@ import AllHouses from "./components/home/AllHouses"
 import SellerPage from "./components/SellerPage/SellerPage";
 import SellerSignup from "./components/sellersignup/SellerSignup";
 import { useState, useEffect } from "react";
+import SellerLogin from "./components/sellerlogin/SellerLogin";
 
 
 
@@ -48,6 +49,8 @@ console.log(user)
           <Route path="/seller" element={<SellerPage user={user}/>}/>
           <Route path="*" element={<Nopage />} />
           <Route path="/sellersignup" element={<SellerSignup onSignup={setUser}/>}/>
+          <Route path="/sellerlogin" element={<SellerLogin onLogin={setUser}/>}/>
+
 
         </Routes>
 
