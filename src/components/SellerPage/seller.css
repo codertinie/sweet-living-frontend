@@ -268,3 +268,17 @@ width: 70%;
     position: relative;
     left: 1.2rem;
 }
+
+.back{
+    width: 20rem;
+    padding: 1rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+    background-color: #F18F01;
+    position: relative;
+    left: 20rem;
+}
+.back:hover{
+    background-color: #f8aa34;
+}
