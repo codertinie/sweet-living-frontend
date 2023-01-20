@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../LoginSignupStyle/LoginSignup.css";
-function Signup({ onSignup }) {
+
+
+function SellerSignup({ onSignup }) {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
-  // const [phone_number, setPhone] = useState("")
+  const [phone_number, setPhone] = useState("")
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [notification,setNotification] = useState(false);
+  
 
 function handleNotification(){
     setNotification((notification) => !notification);
@@ -18,13 +21,13 @@ function handleNotification(){
 
 function endNotification(){
     setNotification((notification) => !notification);
-    navigate("/login")
+    navigate("/sellerlogin")
 }
-
 
   function submitHandler(e) {
     e.preventDefault();
-    fetch("/signup", {
+    ;
+    fetch("/sellersignup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,6 +35,7 @@ function endNotification(){
       body: JSON.stringify({
         username,
         email,
+        phone_number,
         password,
         password_confirmation: passwordConfirmation,
       }),
@@ -47,9 +51,10 @@ function endNotification(){
     });
   }
 
+
   return (
     <div className="form-inner">
-      <h1>Sweet Living SignUp</h1>
+      <h1>Seller SignUp</h1>
       {notification ? (
         <p className="bg-sky-900 transition-ease-in-out text-white w-full p-3 rounded-md flex flex-row justify-center items-center">
           signup successfull
@@ -96,7 +101,7 @@ function endNotification(){
           <label>Email</label>
         </div>
 
-        {/* <div className="form-group">
+        <div className="form-group">
           <input
             type="phone"
             min="10"
@@ -109,7 +114,7 @@ function endNotification(){
           />
           <span></span>
           <label>Phone</label>
-        </div> */}
+        </div>
 
         <div className="form-group">
           <input
@@ -140,25 +145,21 @@ function endNotification(){
           <label>Password Confirmation</label>
         </div>
       
+
         <button
           className="outline text-sky-400 hover:bg-sky-400 hover:text-white rounded-lg p-2 "
           onClick={submitHandler}
           type="button">
           Sign Up
         </button>
-        
 
         <div className="login_link">
           Already have an account?
-          <NavLink to="/login">Login</NavLink>
-          <br></br>
-          <br></br>
-          Are you a property agent?
-          <NavLink to="/sellersignup">Sign Up</NavLink>
+          <NavLink to="/sellerlogin">Login</NavLink>
         </div>
       </form>
     </div>
   );
 }
 
-export default Signup;
+export default SellerSignup;

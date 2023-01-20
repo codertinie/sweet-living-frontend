@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../LoginSignupStyle/LoginSignup.css";
 
-function Login({ onLogin}) {
+function SellerLogin({ onLogin}) {
   const navigate = useNavigate();
   const [error, setError] = useState(null);
   const [email, setEmail] = useState("");
@@ -48,12 +48,12 @@ function Login({ onLogin}) {
 
   function endNotification() {
     setNotify((notify) => !notify);
-    navigate("/home");
+    navigate("/seller");
   }
 
   return (
     <div className="form-inner">
-      <h1>Sweet Living</h1>
+      <h1>Seller Login</h1>
       {notify? (
         <p className="bg-sky-900 text-white w-full p-3 rounded-md flex flex-row justify-center items-center">
           login successfull
@@ -107,11 +107,11 @@ function Login({ onLogin}) {
 
         <div className="signup_link">
           Not a member?
-          <NavLink to="/signup">Signup</NavLink>
+          <NavLink to="/sellersignup">Signup</NavLink>
         </div>
       </form>
     </div>
   );
 }
 
-export default Login;
+export default SellerLogin;

@@ -11,7 +11,21 @@
   left: 7px;
   
 }
-
+.back1{
+  width: 5rem;
+    /* padding: 1rem; */
+    color: white;
+    border-radius: 10px;
+    background-color: #F18F01;
+    position: relative;
+    left: 0.5rem;
+    top: 1.2rem;
+    z-index: 3;
+    font-size: 2rem;
+}
+.back1:hover{
+  background-color: #f8aa34;
+}
 .image-1 img {
   object-fit: cover;
   width: 98vw;
