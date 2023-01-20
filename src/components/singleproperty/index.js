@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+
 
 const Singleproperty = () => {
   const [property, setProperty] = useState([]);
@@ -12,6 +14,8 @@ const Singleproperty = () => {
   const navigate = useNavigate();
   const [mode, setMode] = useState("display");
   const [des, setDes] = useState();
+
+  // const history = useHistory();
 
   // let description = property.map(item => item.description)
 
@@ -84,6 +88,10 @@ function handleBooking() {
       <>
 
     <div className="sellerpage-container">
+    <button >
+      <FontAwesomeIcon icon={faArrowLeft} />
+      
+    </button>
       <div className="image-1">
         <img src={image} alt="" />
         {/* <h2>10.2million</h2> */}
