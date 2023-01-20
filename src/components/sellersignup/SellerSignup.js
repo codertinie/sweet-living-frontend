@@ -21,10 +21,9 @@ function handleNotification(){
 
 function endNotification(){
     setNotification((notification) => !notification);
-    navigate("/login")
+    navigate("/sellerlogin")
 }
 
-const type = "seller"
   function submitHandler(e) {
     e.preventDefault();
     ;
@@ -39,7 +38,6 @@ const type = "seller"
         phone_number,
         password,
         password_confirmation: passwordConfirmation,
-        type: type
       }),
     }).then((res) => {
 
@@ -53,7 +51,6 @@ const type = "seller"
     });
   }
 
-  console.log(type)
 
   return (
     <div className="form-inner">
@@ -158,7 +155,7 @@ const type = "seller"
 
         <div className="login_link">
           Already have an account?
-          <NavLink to="/login">Login</NavLink>
+          <NavLink to="/sellerlogin">Login</NavLink>
         </div>
       </form>
     </div>

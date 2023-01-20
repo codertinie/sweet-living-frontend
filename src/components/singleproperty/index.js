@@ -82,13 +82,16 @@ function handleBooking() {
   alert("Booking successful!, check your email for more details");
   navigate("/home")
 }
+function handleBack(){
+  navigate("/home")
+}
   
     return ( 
       
       <>
 
     <div className="sellerpage-container">
-    <button >
+    <button className="back1" onClick={handleBack}>
       <FontAwesomeIcon icon={faArrowLeft} />
       
     </button>

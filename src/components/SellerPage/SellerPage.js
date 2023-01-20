@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./seller.css";
 
-export const SellerPage = ({ user }) => {
+export const SellerPage = () => {
   const [formData, setValue] = useState({
     houses: "",
     image_url: "",
@@ -14,7 +14,7 @@ export const SellerPage = ({ user }) => {
     price: "",
     category: "",
     description: "",
-    seller_id: user.id,
+    // seller_id: user.id,
   });
   function handleSubmit(e) {
     e.preventDefault();
@@ -54,7 +54,7 @@ export const SellerPage = ({ user }) => {
     });
   }
   console.log(formData);
-  console.log(user.id)
+  // console.log(user.id)
   return (
     <div className="auth-form-container" id="ct">
       <h1>Seller Page</h1>
